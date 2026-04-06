@@ -1,22 +1,31 @@
+// TerrainMap — visual knowledge graph
+// Force-directed canvas. Node size = inDegree. Color = node type.
+// Click a node to inspect its connections.
+
 import { useEffect, useRef, useState } from 'react'
-import { buildGraphData } from '../store'
+import { NODE_TYPE_META, computeInDegree } from '../store'
 
-const TYPE_COLORS = {
-  metaphor: '#a78bfa',
-  problem:  '#f87171',
-  insight:  '#fbbf24',
-  solution: '#4ade80',
-}
-
-export default function InspirationNetwork({ store }) {
+export default function TerrainMap({ store, onNodeSelect }) {
   const wrapRef   = useRef(null)
   const canvasRef = useRef(null)
   const simRef    = useRef([])
   const rafRef    = useRef(null)
-  const [size, setSize]    = useState({ w: 0, h: 0 })
+  const [size, setSize]       = useState({ w: 0, h: 0 })
   const [tooltip, setTooltip] = useState(null)
+  const [selected, setSelected] = useState(null)
+  const [filterType, setFilterType] = useState(null) // null = show all
 
-  const { nodes, edges } = buildGraphData(store.tokens, store.users)
+  const { nodes, edges } = store
+  const inDeg = computeInDegree(nodes, edges)
+
+  const visibleNodes = filterType ? nodes.filter(n => n.type === filterType) : nodes
+  const visibleEdges = filterType
+    ? edges.filter(e => {
+        const fn = visibleNodes.find(n => n.id === e.from)
+        const tn = visibleNodes.find(n => n.id === e.to)
+        return fn && tn
+      })
+    : edges
 
   // Track container dimensions
   useEffect(() => {
@@ -29,32 +38,31 @@ export default function InspirationNetwork({ store }) {
     return () => ro.disconnect()
   }, [])
 
-  // Run force simulation whenever tokens or canvas size changes
+  // Force simulation
   useEffect(() => {
-    if (!size.w || !size.h || !nodes.length) return
+    if (!size.w || !size.h || !visibleNodes.length) return
 
     const cx = size.w / 2
     const cy = size.h / 2
-    const spread = Math.min(cx, cy) * 0.55
+    const spread = Math.min(cx, cy) * 0.52
 
-    // Place nodes in a circle initially, preserving positions if possible
     const prev = Object.fromEntries(simRef.current.map(n => [n.id, n]))
-    simRef.current = nodes.map((n, i) => {
+    simRef.current = visibleNodes.map((n, i) => {
       if (prev[n.id]) return { ...prev[n.id], ...n }
-      const angle = (i / nodes.length) * Math.PI * 2
+      const angle = (i / visibleNodes.length) * Math.PI * 2
       return { ...n, x: cx + Math.cos(angle) * spread, y: cy + Math.sin(angle) * spread, vx: 0, vy: 0 }
     })
 
     let alpha = 1
-    const REPULSE = 6000
-    const SPRING_LEN = 110
-    const SPRING_K = 0.035
-    const CENTER_K = 0.008
-    const DAMP = 0.72
+    const REPULSE  = 7000
+    const SPRING_L = 115
+    const SPRING_K = 0.03
+    const CENTER_K = 0.007
+    const DAMP     = 0.74
 
     function tick() {
       const s = simRef.current
-      alpha = Math.max(0.01, alpha * 0.992)
+      alpha = Math.max(0.005, alpha * 0.994)
 
       // Repulsion between all pairs
       for (let i = 0; i < s.length; i++) {
@@ -69,13 +77,13 @@ export default function InspirationNetwork({ store }) {
       }
 
       // Spring attraction along edges
-      for (const e of edges) {
+      for (const e of visibleEdges) {
         const a = s.find(n => n.id === e.from)
         const b = s.find(n => n.id === e.to)
         if (!a || !b) continue
         const dx = b.x - a.x, dy = b.y - a.y
         const d  = Math.sqrt(dx * dx + dy * dy) || 1
-        const f  = (d - SPRING_LEN) * SPRING_K * alpha
+        const f  = (d - SPRING_L) * SPRING_K * alpha
         const fx = (dx / d) * f, fy = (dy / d) * f
         a.vx += fx;  a.vy += fy
         b.vx -= fx;  b.vy -= fy
@@ -87,9 +95,7 @@ export default function InspirationNetwork({ store }) {
         n.vy += (cy - n.y) * CENTER_K * alpha
         n.vx *= DAMP;  n.vy *= DAMP
         n.x  += n.vx;  n.y  += n.vy
-
-        // Boundary padding
-        const PAD = 30
+        const PAD = 36
         n.x = Math.max(PAD, Math.min(size.w - PAD, n.x))
         n.y = Math.max(PAD, Math.min(size.h - PAD, n.y))
       }
@@ -101,7 +107,11 @@ export default function InspirationNetwork({ store }) {
     if (rafRef.current) cancelAnimationFrame(rafRef.current)
     rafRef.current = requestAnimationFrame(tick)
     return () => { if (rafRef.current) cancelAnimationFrame(rafRef.current) }
-  }, [store.tokens.length, size.w, size.h]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [visibleNodes.length, visibleEdges.length, size.w, size.h]) // eslint-disable-line
+
+  function nodeRadius(node) {
+    return 13 + Math.min((inDeg[node.id] || 0) * 3, 18)
+  }
 
   function draw() {
     const canvas = canvasRef.current
@@ -110,126 +120,186 @@ export default function InspirationNetwork({ store }) {
     const s   = simRef.current
     ctx.clearRect(0, 0, size.w, size.h)
 
-    // Draw edges with arrowheads
-    for (const e of edges) {
+    // Draw edges
+    for (const e of visibleEdges) {
       const a = s.find(n => n.id === e.from)
       const b = s.find(n => n.id === e.to)
       if (!a || !b) continue
 
-      const ang  = Math.atan2(b.y - a.y, b.x - a.x)
-      const NODE_R = 16
-      // Endpoint just outside target node
-      const tx = b.x - Math.cos(ang) * NODE_R
-      const ty = b.y - Math.sin(ang) * NODE_R
+      const isSelected = selected && (e.from === selected || e.to === selected)
+      const ang = Math.atan2(b.y - a.y, b.x - a.x)
+      const rb  = nodeRadius(visibleNodes.find(n => n.id === e.to) || { id: e.to })
+      const tx  = b.x - Math.cos(ang) * rb
+      const ty  = b.y - Math.sin(ang) * rb
 
       ctx.beginPath()
       ctx.moveTo(a.x, a.y)
       ctx.lineTo(tx, ty)
-      ctx.strokeStyle = 'rgba(108,143,255,0.22)'
-      ctx.lineWidth   = 1.5
+      ctx.strokeStyle = isSelected ? 'rgba(108,143,255,0.65)' : 'rgba(108,143,255,0.15)'
+      ctx.lineWidth   = isSelected ? 1.8 : 1.2
       ctx.stroke()
 
       // Arrowhead
       ctx.beginPath()
       ctx.moveTo(tx, ty)
-      ctx.lineTo(tx - Math.cos(ang - 0.42) * 9, ty - Math.sin(ang - 0.42) * 9)
-      ctx.lineTo(tx - Math.cos(ang + 0.42) * 9, ty - Math.sin(ang + 0.42) * 9)
+      ctx.lineTo(tx - Math.cos(ang - 0.4) * 8, ty - Math.sin(ang - 0.4) * 8)
+      ctx.lineTo(tx - Math.cos(ang + 0.4) * 8, ty - Math.sin(ang + 0.4) * 8)
       ctx.closePath()
-      ctx.fillStyle = 'rgba(108,143,255,0.5)'
+      ctx.fillStyle = isSelected ? 'rgba(108,143,255,0.75)' : 'rgba(108,143,255,0.3)'
       ctx.fill()
     }
 
     // Draw nodes
     for (const n of s) {
-      const col = TYPE_COLORS[n.type] || '#8896a5'
-      const r   = 14 + Math.min(n.remixCount * 2, 12)
+      const meta    = NODE_TYPE_META[n.type] || { icon: '·', color: '#8896a5' }
+      const col     = meta.color
+      const r       = nodeRadius(n)
+      const isSel   = selected === n.id
 
-      // Glow
-      ctx.beginPath(); ctx.arc(n.x, n.y, r + 5, 0, Math.PI * 2)
-      ctx.fillStyle = col + '14'; ctx.fill()
+      // Selection ring
+      if (isSel) {
+        ctx.beginPath(); ctx.arc(n.x, n.y, r + 6, 0, Math.PI * 2)
+        ctx.strokeStyle = col; ctx.lineWidth = 2; ctx.setLineDash([4, 3]); ctx.stroke()
+        ctx.setLineDash([])
+      }
 
-      // Circle
+      // Glow for high-convergence nodes
+      const deg = inDeg[n.id] || 0
+      if (deg > 1) {
+        ctx.beginPath(); ctx.arc(n.x, n.y, r + 8, 0, Math.PI * 2)
+        ctx.fillStyle = col + '10'; ctx.fill()
+      }
+
+      // Circle fill + stroke
       ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI * 2)
-      ctx.fillStyle   = col + '28'; ctx.fill()
-      ctx.strokeStyle = col; ctx.lineWidth = 2; ctx.stroke()
+      ctx.fillStyle   = isSel ? col + '40' : col + '22'; ctx.fill()
+      ctx.strokeStyle = col; ctx.lineWidth = isSel ? 2.5 : 1.8; ctx.stroke()
 
-      // Avatar emoji
-      ctx.font          = `${Math.max(11, r - 2)}px serif`
-      ctx.textAlign     = 'center'
-      ctx.textBaseline  = 'middle'
-      ctx.fillStyle     = '#fff'
-      ctx.fillText(n.creatorAvatar, n.x, n.y)
+      // Icon
+      const fontSize = Math.max(10, r - 3)
+      ctx.font         = `${fontSize}px serif`
+      ctx.textAlign    = 'center'
+      ctx.textBaseline = 'middle'
+      ctx.fillStyle    = col
+      ctx.fillText(meta.icon, n.x, n.y)
 
       // Label below
-      ctx.font         = '11px system-ui, sans-serif'
-      ctx.fillStyle    = 'rgba(136,150,165,0.85)'
+      ctx.font         = '10px system-ui, sans-serif'
+      ctx.fillStyle    = 'rgba(226,232,240,0.7)'
       ctx.textBaseline = 'top'
-      const lbl = n.label.length > 26 ? n.label.slice(0, 24) + '…' : n.label
-      ctx.fillText(lbl, n.x, n.y + r + 5)
+      const lbl = n.title.length > 22 ? n.title.slice(0, 20) + '…' : n.title
+      ctx.fillText(lbl, n.x, n.y + r + 4)
+
+      // InDegree badge
+      if (deg > 0) {
+        ctx.font      = 'bold 9px system-ui, sans-serif'
+        ctx.fillStyle = col
+        ctx.textBaseline = 'middle'
+        ctx.fillText(deg, n.x + r - 1, n.y - r + 1)
+      }
     }
   }
 
   function onMouseMove(e) {
     if (!canvasRef.current || !simRef.current.length) { setTooltip(null); return }
     const rect = canvasRef.current.getBoundingClientRect()
-    const mx   = e.clientX - rect.left
-    const my   = e.clientY - rect.top
-    const hit  = simRef.current.find(n => Math.hypot(n.x - mx, n.y - my) < 20)
+    const mx = e.clientX - rect.left
+    const my = e.clientY - rect.top
+    const hit = simRef.current.find(n => Math.hypot(n.x - mx, n.y - my) < nodeRadius(n) + 4)
     setTooltip(hit ? { node: hit, x: e.clientX, y: e.clientY } : null)
   }
 
-  const isEmpty = nodes.length === 0
+  function onClick(e) {
+    if (!canvasRef.current || !simRef.current.length) return
+    const rect = canvasRef.current.getBoundingClientRect()
+    const mx = e.clientX - rect.left
+    const my = e.clientY - rect.top
+    const hit = simRef.current.find(n => Math.hypot(n.x - mx, n.y - my) < nodeRadius(n) + 4)
+    if (hit) {
+      setSelected(hit.id === selected ? null : hit.id)
+      if (onNodeSelect) onNodeSelect(hit.id === selected ? null : hit)
+    } else {
+      setSelected(null)
+      if (onNodeSelect) onNodeSelect(null)
+    }
+  }
+
+  const isEmpty = visibleNodes.length === 0
 
   return (
     <div className="network-wrap">
       <div className="page-header">
-        <h2 className="page-title">⬡ Inspiration Network</h2>
-        <p className="page-sub">Attribution graph — who builds on what. Hover nodes for details.</p>
+        <h2 className="page-title">⬡ Terrain</h2>
+        <p className="page-sub">
+          Knowledge graph — node size = convergence. Click to inspect. Filter by type.
+        </p>
+        <div className="terrain-filter-row">
+          <button
+            className={`filter-pill ${!filterType ? 'active' : ''}`}
+            onClick={() => setFilterType(null)}
+          >All</button>
+          {Object.entries(NODE_TYPE_META).map(([type, meta]) => (
+            <button
+              key={type}
+              className={`filter-pill ${filterType === type ? 'active' : ''}`}
+              style={{ '--pill-accent': meta.color }}
+              onClick={() => setFilterType(filterType === type ? null : type)}
+            >
+              {meta.icon} {meta.label}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="network-canvas-box" ref={wrapRef}>
         {isEmpty ? (
           <div style={{ display:'flex', alignItems:'center', justifyContent:'center', height:'100%', color:'var(--text-muted)', fontSize:14 }}>
-            Mint tokens to populate the network
+            No nodes to show
           </div>
         ) : (
           <canvas
             ref={canvasRef}
             width={size.w}
             height={size.h}
-            style={{ display: 'block' }}
+            style={{ display: 'block', cursor: 'crosshair' }}
             onMouseMove={onMouseMove}
             onMouseLeave={() => setTooltip(null)}
+            onClick={onClick}
           />
         )}
 
+        {/* Legend */}
         <div className="network-legend">
-          {Object.entries(TYPE_COLORS).map(([type, color]) => (
+          {Object.entries(NODE_TYPE_META).map(([type, meta]) => (
             <div key={type} className="legend-row">
-              <div className="legend-dot" style={{ background: color }} />
-              {type}
+              <div className="legend-dot" style={{ background: meta.color }} />
+              {meta.label}
             </div>
           ))}
+          <div className="legend-row" style={{ marginTop: 6, borderTop: '1px solid var(--border)', paddingTop: 6 }}>
+            <div className="legend-dot" style={{ background: 'transparent', border: '1px dashed #6c8fff' }} />
+            Selected
+          </div>
         </div>
       </div>
 
+      {/* Tooltip */}
       {tooltip && (
-        <div
-          className="tooltip"
-          style={{ left: tooltip.x + 14, top: tooltip.y - 10 }}
-        >
-          <div className="tooltip-title">{tooltip.node.label}</div>
+        <div className="tooltip" style={{ left: tooltip.x + 14, top: tooltip.y - 10 }}>
+          <div className="tooltip-title">{tooltip.node.title}</div>
           <div className="tooltip-sub">
-            {tooltip.node.type} · {tooltip.node.creatorName}
-            {tooltip.node.remixCount > 0 && ` · ↺ ${tooltip.node.remixCount}`}
+            {tooltip.node.type}
+            {tooltip.node.context ? ` · ${tooltip.node.context}` : ''}
+            {(inDeg[tooltip.node.id] || 0) > 0 && ` · ${inDeg[tooltip.node.id]} incoming`}
           </div>
           {tooltip.node.tags?.length > 0 && (
             <div style={{ marginTop: 6, display:'flex', gap:4, flexWrap:'wrap' }}>
-              {tooltip.node.tags.map(t => (
-                <span key={t} className="tag">#{t}</span>
-              ))}
+              {tooltip.node.tags.map(t => <span key={t} className="tag">#{t}</span>)}
             </div>
           )}
+          <div style={{ marginTop: 6, fontSize: 11, color: 'var(--text-muted)' }}>
+            Click to inspect
+          </div>
         </div>
       )}
     </div>
