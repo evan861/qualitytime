@@ -8,6 +8,7 @@ const CLASS_META = {
   orientation: { color: '#fbbf24', label: 'Orientation' },
   integrity:   { color: '#4ade80', label: 'Integrity'   },
   execution:   { color: '#6c8fff', label: 'Execution'   },
+  maintenance: { color: '#f472b6', label: 'Maintenance'  },
 }
 
 // ── Protocol card (collapsed) ─────────────────────────────────────────────────
@@ -206,7 +207,7 @@ function ProtocolSession({ protocol, store, onComplete, onCancel }) {
 
 // ── ProtocolRunner shell ──────────────────────────────────────────────────────
 
-const CLASS_ORDER = ['orientation', 'integrity', 'execution']
+const CLASS_ORDER = ['orientation', 'integrity', 'execution', 'maintenance']
 
 export default function ProtocolRunner({ store, onProtocolComplete }) {
   const [activeProtocol, setActiveProtocol] = useState(null)

@@ -6,7 +6,7 @@ const D = 86_400_000 // one day in ms
 
 // ── Node + edge type registries ───────────────────────────────────────────────
 
-export const NODE_TYPES = ['artifact', 'idea', 'moment', 'person', 'context', 'environment']
+export const NODE_TYPES = ['artifact', 'idea', 'moment', 'person', 'context', 'environment', 'relation']
 
 export const NODE_TYPE_META = {
   artifact:    { icon: '◈', label: 'Artifact',    color: '#6c8fff' },
@@ -15,12 +15,14 @@ export const NODE_TYPE_META = {
   person:      { icon: '○', label: 'Person',        color: '#4ade80' },
   context:     { icon: '◐', label: 'Context',      color: '#2dd4bf' },
   environment: { icon: '□', label: 'Environment',  color: '#fb923c' },
+  relation:    { icon: '↔', label: 'Relation',     color: '#f472b6' },
 }
 
 export const EDGE_TYPES = [
   'EMERGED_FROM', 'EXPRESSES', 'REFINES', 'CREATED_BY', 'INSPIRED_BY',
   'EVOLVES_INTO', 'DESCENDED_FROM', 'RECOGNIZED_IN', 'CAPTURED_AS',
   'DISCUSSED_IN', 'CONTRADICTS', 'TRANSLATES_INTO', 'OCCURRED_IN', 'PARTICIPATED_IN',
+  'TAKES_PLACE_AT', 'EMBODIED_AS', 'DERIVES_FROM', 'INFLUENCED_BY', 'REMIXES', 'BELONGS_TO',
 ]
 
 // Edge type label abbreviations for graph rendering
@@ -39,6 +41,12 @@ export const EDGE_ABBREV = {
   TRANSLATES_INTO: '→trans',
   OCCURRED_IN:     'in→',
   PARTICIPATED_IN: 'part→',
+  TAKES_PLACE_AT:  'at→',
+  EMBODIED_AS:     'emb→',
+  DERIVES_FROM:    '←deriv',
+  INFLUENCED_BY:   '←infl',
+  REMIXES:         'remix',
+  BELONGS_TO:      'part-of',
 }
 
 // ── Protocol definitions ──────────────────────────────────────────────────────
@@ -111,6 +119,21 @@ export const PROTOCOLS = [
       { name: 'Frame Check', prompt: 'What mode are you in? (building, exploring, synthesizing, resting, integrating)' },
       { name: 'Open Threads', prompt: 'What threads are unresolved from the last session?' },
       { name: 'Intention', prompt: 'What do you want to accomplish this session? One clear statement.' },
+    ],
+    outputType: 'artifact',
+  },
+  {
+    id: 'health-check',
+    class: 'maintenance',
+    name: 'Maintenance Run',
+    trigger: 'Monthly cadence, or when the graph feels stale or overgrown',
+    description: 'Deliberate maintenance pass: find stale nodes, missing lineage, underconnected ideas. Produces a filed report and a set of suggested new edges.',
+    phases: [
+      { name: 'Stale Scan', prompt: 'Which nodes have had no new connections in 30+ days? Which feel orphaned or incomplete? List them.' },
+      { name: 'Missing Lineage', prompt: 'Which nodes lack outgoing edges — no source moment, no expressed idea, no continuation? What are they missing?' },
+      { name: 'Underconnected Ideas', prompt: 'Which ideas appear only once or twice but feel central to the whole? What should they connect to that they don\'t yet?' },
+      { name: 'Suggested Edges', prompt: 'Based on the scan: name 3–5 specific new edges that would most improve the graph\'s coherence. Format: [Node A] → [EDGE_TYPE] → [Node B].' },
+      { name: 'Filing', prompt: 'Which findings need to be captured as new nodes? Which suggested edges should be added now? Document the maintenance report here.' },
     ],
     outputType: 'artifact',
   },
@@ -296,4 +319,78 @@ export function getLiveEdge(nodes, edges, count = 8) {
 /** Build node + edge data for canvas rendering */
 export function buildGraphData(nodes, edges) {
   return { nodes, edges }
+}
+
+/**
+ * Suggest related existing nodes for a node being created.
+ * Scores by: tag overlap, title word overlap, type affinity, recency.
+ * Returns top N candidates with a suggested edge type.
+ */
+export function getSuggestedConnections(type, title, tags, nodes, count = 5) {
+  const tagSet  = new Set(tags.map(t => t.toLowerCase().trim()).filter(Boolean))
+  const words   = new Set(
+    title.toLowerCase().split(/\s+/).filter(w => w.length > 3)
+  )
+
+  // Which types commonly connect to each source type, and what edge to suggest
+  const AFFINITIES = {
+    artifact:    [{ type: 'moment',   edge: 'EMERGED_FROM'   },
+                  { type: 'idea',     edge: 'EXPRESSES'      },
+                  { type: 'person',   edge: 'CREATED_BY'     },
+                  { type: 'artifact', edge: 'EVOLVES_INTO'   }],
+    idea:        [{ type: 'idea',     edge: 'REFINES'        },
+                  { type: 'moment',   edge: 'RECOGNIZED_IN'  },
+                  { type: 'idea',     edge: 'DESCENDED_FROM' }],
+    moment:      [{ type: 'person',   edge: 'PARTICIPATED_IN'},
+                  { type: 'context',  edge: 'OCCURRED_IN'    }],
+    person:      [{ type: 'moment',   edge: 'PARTICIPATED_IN'}],
+    relation:    [{ type: 'idea',     edge: 'EXPRESSES'      },
+                  { type: 'person',   edge: 'PARTICIPATED_IN'}],
+    context:     [{ type: 'artifact', edge: 'OCCURRED_IN'    }],
+    environment: [{ type: 'moment',   edge: 'OCCURRED_IN'    }],
+  }
+  const affinityTypes = new Set((AFFINITIES[type] || []).map(a => a.type))
+
+  const scored = nodes.map(n => {
+    let score = 0
+
+    // Tag overlap (strongest signal)
+    const nodeTags = (n.tags || []).map(t => t.toLowerCase())
+    for (const t of tagSet) {
+      if (nodeTags.includes(t)) score += 3
+    }
+
+    // Title word overlap
+    const nodeWords = new Set(n.title.toLowerCase().split(/\s+/))
+    for (const w of words) {
+      if (nodeWords.has(w)) score += 2
+    }
+
+    // Content word overlap (lighter)
+    if (n.content) {
+      const contentWords = new Set(n.content.toLowerCase().split(/\s+/))
+      for (const w of words) {
+        if (contentWords.has(w)) score += 1
+      }
+    }
+
+    // Type affinity
+    if (affinityTypes.has(n.type)) score += 2
+
+    // Recency bonus
+    const days = (Date.now() - n.createdAt) / 86_400_000
+    if (days < 7)  score += 2
+    else if (days < 30) score += 1
+
+    // Suggest the best edge type based on the connected node's type
+    const affinity = (AFFINITIES[type] || []).find(a => a.type === n.type)
+    const suggestedEdge = affinity?.edge || 'INSPIRED_BY'
+
+    return { ...n, score, suggestedEdge }
+  })
+
+  return scored
+    .filter(n => n.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, count)
 }

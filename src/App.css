@@ -446,3 +446,22 @@ select option { background: var(--surface2); }
 .review-phase      { background: var(--surface2); border-radius: var(--radius); padding: 14px 16px; }
 .review-phase-name { font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px; }
 .review-phase-body { font-size: 13px; line-height: 1.6; white-space: pre-wrap; }
+
+/* ── Placement suggestions ──────────────────────────────────────────────────── */
+.suggestion-list { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; }
+
+.suggestion-pill {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 7px 11px;
+  font-size: 12px; cursor: pointer; text-align: left; width: 100%;
+  transition: border-color 0.12s, background 0.12s;
+}
+.suggestion-pill:hover:not(:disabled) {
+  border-color: var(--sug-color, var(--accent));
+  background: color-mix(in srgb, var(--sug-color, var(--accent)) 8%, var(--surface2));
+}
+.suggestion-pill.added { opacity: 0.55; cursor: default; }
+.sug-title { flex: 1; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sug-edge  { font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); background: var(--surface); padding: 1px 6px; border-radius: 3px; flex-shrink: 0; }
+.sug-check { color: var(--green); font-size: 12px; flex-shrink: 0; }

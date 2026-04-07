@@ -1,7 +1,7 @@
 // Capture — add any node type to the graph with lineage edges.
 
-import { useState } from 'react'
-import { addNode, NODE_TYPES, NODE_TYPE_META, EDGE_TYPES } from '../store'
+import { useState, useMemo } from 'react'
+import { addNode, NODE_TYPES, NODE_TYPE_META, EDGE_TYPES, getSuggestedConnections } from '../store'
 
 function EdgeBuilder({ nodes, edgeList, onChange }) {
   function addEdge() {
@@ -95,21 +95,30 @@ export default function Capture({ store, onCapture, onNav }) {
     setTitle(''); setContent(''); setContext(''); setTags(''); setEdges([])
   }
 
-  // Suggested edge type based on node type selection
-  const suggestEdgeType = () => {
-    const suggestions = {
-      artifact: 'EMERGED_FROM',
-      idea:     'REFINES',
-      moment:   'PARTICIPATED_IN',
-      person:   'CREATED_BY',
-      context:  'OCCURRED_IN',
-      environment: 'OCCURRED_IN',
+  // Compute placement suggestions reactively from title + tags
+  const suggestions = useMemo(() => {
+    if (!title.trim() && !tags.trim()) return []
+    return getSuggestedConnections(
+      type, title,
+      tags.split(',').map(t => t.trim()).filter(Boolean),
+      store.nodes
+    )
+  }, [type, title, tags, store.nodes])
+
+  function quickConnect(suggestion) {
+    // Add edge if not already present
+    const already = edges.some(e => e.nodeId === suggestion.id)
+    if (!already) {
+      setEdges([...edges, {
+        nodeId: suggestion.id,
+        type:   suggestion.suggestedEdge,
+        dir:    'from',
+      }])
     }
-    return suggestions[type] || 'EMERGED_FROM'
   }
 
   function addSuggestedEdge() {
-    setEdges([...edges, { nodeId: '', type: suggestEdgeType(), dir: 'from' }])
+    setEdges([...edges, { nodeId: '', type: 'EMERGED_FROM', dir: 'from' }])
   }
 
   return (
@@ -206,6 +215,37 @@ export default function Capture({ store, onCapture, onNav }) {
             </div>
           </div>
 
+          {/* Placement suggestions */}
+          {suggestions.length > 0 && (
+            <div className="field">
+              <label className="field-label">Suggested connections</label>
+              <p className="field-hint">
+                Based on your title and tags — click to connect.
+              </p>
+              <div className="suggestion-list">
+                {suggestions.map(s => {
+                  const m = NODE_TYPE_META[s.type] || { icon: '·', color: '#8896a5' }
+                  const alreadyAdded = edges.some(e => e.nodeId === s.id)
+                  return (
+                    <button
+                      key={s.id}
+                      className={`suggestion-pill ${alreadyAdded ? 'added' : ''}`}
+                      style={{ '--sug-color': m.color }}
+                      onClick={() => quickConnect(s)}
+                      disabled={alreadyAdded}
+                      title={s.content}
+                    >
+                      <span style={{ color: m.color }}>{m.icon}</span>
+                      <span className="sug-title">{s.title}</span>
+                      <span className="sug-edge">{s.suggestedEdge}</span>
+                      {alreadyAdded && <span className="sug-check">✓</span>}
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+          )}
+
           {/* Edge builder */}
           <div className="field">
             <label className="field-label">Edges</label>
@@ -225,7 +265,7 @@ export default function Capture({ store, onCapture, onNav }) {
                 style={{ marginTop: 8 }}
                 onClick={addSuggestedEdge}
               >
-                + Suggest edge for {type}
+                + Add edge manually
               </button>
             )}
           </div>
