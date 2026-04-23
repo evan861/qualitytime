@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { loadStore, saveStore } from './store'
-import Dashboard      from './components/CoreLayer'
-import TerrainMap     from './components/InspirationNetwork'
-import Capture        from './components/MintToken'
+import Dashboard      from './components/Dashboard'
+import TerrainMap     from './components/TerrainMap'
+import Capture        from './components/Capture'
 import QueryPanel     from './components/QueryPanel'
 import ProtocolRunner from './components/ProtocolRunner'
 

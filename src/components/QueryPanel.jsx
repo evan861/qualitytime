@@ -3,7 +3,7 @@
 
 import { useState } from 'react'
 import { getConnections, getConvergenceNodes, getOpenThreads, NODE_TYPE_META } from '../store'
-import NodeCard from './TokenCard'
+import NodeCard from './NodeCard'
 
 function timeAgo(ts) {
   const d = Math.floor((Date.now() - ts) / 86_400_000)
