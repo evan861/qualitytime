@@ -1,10 +1,12 @@
-import { useState } from 'react'
-import { loadStore, saveStore } from './store'
+import { useState, useEffect } from 'react'
+import { loadStore } from './store'
+import { fetchStore, persistStore } from './api'
 import Dashboard      from './components/Dashboard'
 import TerrainMap     from './components/TerrainMap'
 import Capture        from './components/Capture'
 import QueryPanel     from './components/QueryPanel'
 import ProtocolRunner from './components/ProtocolRunner'
+import ClaudeAdvisor  from './components/ClaudeAdvisor'
 
 const NAV = [
   { id: 'dashboard', icon: '◈', label: 'Dashboard'  },
@@ -12,25 +14,37 @@ const NAV = [
   { id: 'capture',   icon: '◎', label: 'Capture'    },
   { id: 'query',     icon: '◐', label: 'Query'      },
   { id: 'protocols', icon: '⚡', label: 'Protocols'  },
+  { id: 'advisor',   icon: '◉', label: 'Advisor'    },
 ]
 
 export default function App() {
-  const [view,          setView]          = useState('dashboard')
-  const [store,         setStore]         = useState(() => loadStore())
-  const [queryNodeId,   setQueryNodeId]   = useState(null)
+  const [view,        setView]        = useState('dashboard')
+  const [store,       setStore]       = useState(() => loadStore())
+  const [queryNodeId, setQueryNodeId] = useState(null)
+  const [backendUp,   setBackendUp]   = useState(false)
+
+  // Try to load from backend; fall back to localStorage silently
+  useEffect(() => {
+    fetchStore()
+      .then(data => { setStore(data); setBackendUp(true) })
+      .catch(() => {/* stay on localStorage store */})
+  }, [])
 
   function updateStore(next) {
     setStore(next)
-    saveStore(next)
+    if (backendUp) {
+      persistStore(next).catch(() => {/* best-effort */})
+    } else {
+      // fallback: write to localStorage via the old saveStore logic
+      try { localStorage.setItem('workbench-store', JSON.stringify(next)) } catch {}
+    }
   }
 
-  // Navigate to a view, optionally with a node pre-selected in the query panel
   function navTo(viewId, nodeId = null) {
     if (viewId === 'query' && nodeId) setQueryNodeId(nodeId)
     setView(viewId)
   }
 
-  // When terrain node is clicked, open query panel pre-loaded
   function handleTerrainNodeSelect(node) {
     if (node) {
       setQueryNodeId(node.id)
@@ -38,8 +52,8 @@ export default function App() {
     }
   }
 
-  const nodeCount  = store.nodes.length
-  const edgeCount  = store.edges.length
+  const nodeCount = store.nodes.length
+  const edgeCount = store.edges.length
 
   return (
     <div className="app">
@@ -65,7 +79,7 @@ export default function App() {
         <div className="sidebar-footer">
           <div className="sidebar-stat">{nodeCount} nodes</div>
           <div className="sidebar-stat">{edgeCount} edges</div>
-          <div className="sidebar-hint">v1 · local graph</div>
+          <div className="sidebar-hint">{backendUp ? 'v1 · backend' : 'v1 · local'}</div>
         </div>
       </aside>
 
@@ -83,11 +97,14 @@ export default function App() {
           <QueryPanel
             store={store}
             initialNodeId={queryNodeId}
-            key={queryNodeId} // re-mount when node changes from terrain click
+            key={queryNodeId}
           />
         )}
         {view === 'protocols' && (
           <ProtocolRunner store={store} onProtocolComplete={updateStore} />
+        )}
+        {view === 'advisor' && (
+          <ClaudeAdvisor store={store} />
         )}
       </main>
     </div>
