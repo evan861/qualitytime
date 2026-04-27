@@ -243,6 +243,50 @@ export function addNode({ type, title, content, context, tags, newEdges = [], st
   return { ...store, nodes: [...store.nodes, node], edges: [...store.edges, ...edgeObjs] }
 }
 
+export function addEdge({ from, to, type, store }) {
+  const edge = { id: uuidv4(), from, to, type, createdAt: Date.now() }
+  return { ...store, edges: [...store.edges, edge], _lastEdgeId: edge.id }
+}
+
+export function deleteNode(nodeId, store) {
+  return {
+    ...store,
+    nodes: store.nodes.filter(n => n.id !== nodeId),
+    edges: store.edges.filter(e => e.from !== nodeId && e.to !== nodeId),
+  }
+}
+
+export function deleteEdge(edgeId, store) {
+  return { ...store, edges: store.edges.filter(e => e.id !== edgeId) }
+}
+
+export function tagNode(nodeId, tag, store) {
+  return {
+    ...store,
+    nodes: store.nodes.map(n =>
+      n.id === nodeId
+        ? { ...n, tags: Array.from(new Set([...(n.tags || []), tag])) }
+        : n
+    ),
+  }
+}
+
+/** Find a node by id-prefix (>=4 chars) or by exact/case-insensitive title. */
+export function resolveNode(needle, nodes) {
+  if (!needle) return null
+  const exact = nodes.find(n => n.id === needle)
+  if (exact) return exact
+  if (needle.length >= 3) {
+    const prefixed = nodes.filter(n => n.id.startsWith(needle))
+    if (prefixed.length === 1) return prefixed[0]
+  }
+  const byTitle = nodes.find(n => n.title.toLowerCase() === needle.toLowerCase())
+  if (byTitle) return byTitle
+  const partial = nodes.filter(n => n.title.toLowerCase().includes(needle.toLowerCase()))
+  if (partial.length === 1) return partial[0]
+  return null
+}
+
 // ── Graph computation ─────────────────────────────────────────────────────────
 
 /** Map from node id → count of incoming edges */

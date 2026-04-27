@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { loadStore, saveStore } from './store'
-import Dashboard      from './components/CoreLayer'
-import TerrainMap     from './components/InspirationNetwork'
-import Capture        from './components/MintToken'
-import QueryPanel     from './components/QueryPanel'
-import ProtocolRunner from './components/ProtocolRunner'
+import Dashboard       from './components/CoreLayer'
+import TerrainMap      from './components/InspirationNetwork'
+import Capture         from './components/MintToken'
+import QueryPanel      from './components/QueryPanel'
+import ProtocolRunner  from './components/ProtocolRunner'
+import CommandTerminal from './components/CommandTerminal'
 
 const NAV = [
   { id: 'dashboard', icon: '◈', label: 'Dashboard'  },
@@ -12,6 +13,7 @@ const NAV = [
   { id: 'capture',   icon: '◎', label: 'Capture'    },
   { id: 'query',     icon: '◐', label: 'Query'      },
   { id: 'protocols', icon: '⚡', label: 'Protocols'  },
+  { id: 'terminal',  icon: '⌨', label: 'Terminal'   },
 ]
 
 export default function App() {
@@ -88,6 +90,9 @@ export default function App() {
         )}
         {view === 'protocols' && (
           <ProtocolRunner store={store} onProtocolComplete={updateStore} />
+        )}
+        {view === 'terminal' && (
+          <CommandTerminal store={store} onUpdate={updateStore} />
         )}
       </main>
     </div>
