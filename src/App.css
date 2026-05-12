@@ -466,6 +466,91 @@ select option { background: var(--surface2); }
 .sug-edge  { font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); background: var(--surface); padding: 1px 6px; border-radius: 3px; flex-shrink: 0; }
 .sug-check { color: var(--green); font-size: 12px; flex-shrink: 0; }
 
+/* ── Intake journey system ──────────────────────────────────────────────────── */
+.intake-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+  max-width: 900px;
+}
+
+.intake-card {
+  display: flex; flex-direction: column; align-items: flex-start;
+  gap: 6px; padding: 20px 18px 16px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); cursor: pointer; text-align: left;
+  transition: border-color 0.14s, background 0.14s;
+}
+.intake-card:hover {
+  border-color: var(--journey-color, var(--accent));
+  background: color-mix(in srgb, var(--journey-color, var(--accent)) 5%, var(--surface));
+}
+.intake-card-icon    { font-size: 28px; line-height: 1; margin-bottom: 4px; }
+.intake-card-label   { font-size: 14px; font-weight: 600; color: var(--text); }
+.intake-card-tagline { font-size: 11px; color: var(--text-muted); line-height: 1.4; }
+.intake-card-arrow   { font-size: 13px; color: var(--journey-color, var(--accent)); margin-top: 4px; opacity: 0; transition: opacity 0.14s; }
+.intake-card:hover .intake-card-arrow { opacity: 1; }
+
+/* Journey flow */
+.journey-flow {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 28px 32px;
+  max-width: 640px; display: flex; flex-direction: column; gap: 24px;
+}
+
+.journey-header {
+  display: flex; align-items: center; gap: 14px;
+}
+.journey-badge {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.7px;
+  background: color-mix(in srgb, var(--journey-color) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--journey-color) 30%, transparent);
+  padding: 3px 10px; border-radius: 999px;
+}
+.step-progress { display: flex; gap: 5px; align-items: center; }
+.step-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--border); transition: background 0.15s;
+}
+.step-dot.done   { background: color-mix(in srgb, var(--journey-color) 60%, transparent); }
+.step-dot.active { background: var(--journey-color); }
+.step-counter { font-size: 11px; color: var(--text-muted); margin-left: auto; }
+
+.step-meta   { display: flex; flex-direction: column; gap: 5px; }
+.step-title  { font-size: 18px; font-weight: 600; color: var(--text); }
+.step-hint   { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+.step-fields { display: flex; flex-direction: column; gap: 16px; }
+.step-body   { min-height: 180px; }
+
+.journey-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: 8px; border-top: 1px solid var(--border);
+}
+.journey-nav .btn-primary {
+  background: var(--btn-color, var(--accent));
+}
+.journey-nav .btn-primary:hover {
+  background: color-mix(in srgb, var(--btn-color, var(--accent)) 80%, #fff);
+}
+
+/* Radio buttons in steps */
+.radio-group  { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+.radio-label  { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text); cursor: pointer; }
+.radio-label input { accent-color: var(--accent); }
+
+/* Done state */
+.journey-done {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 48px 24px; text-align: center; max-width: 420px; margin: 0 auto;
+  gap: 8px;
+}
+.journey-done-icon    { font-size: 40px; line-height: 1; margin-bottom: 8px; }
+.journey-done-title   { font-size: 20px; font-weight: 600; color: var(--text); }
+.journey-done-sub     { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; }
+.journey-done-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 4px; }
+
 /* ── Claude Advisor ─────────────────────────────────────────────────────────── */
 .claude-context {
   display: flex; align-items: center; flex-wrap: wrap; gap: 6px;
