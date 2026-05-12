@@ -19,34 +19,46 @@ export const NODE_TYPE_META = {
 }
 
 export const EDGE_TYPES = [
+  // Cognitive action edges (how ideas move through the graph)
   'EMERGED_FROM', 'EXPRESSES', 'REFINES', 'CREATED_BY', 'INSPIRED_BY',
   'EVOLVES_INTO', 'DESCENDED_FROM', 'RECOGNIZED_IN', 'CAPTURED_AS',
   'DISCUSSED_IN', 'CONTRADICTS', 'TRANSLATES_INTO', 'OCCURRED_IN', 'PARTICIPATED_IN',
   'TAKES_PLACE_AT', 'EMBODIED_AS', 'DERIVES_FROM', 'INFLUENCED_BY', 'REMIXES', 'BELONGS_TO',
+  // Inspiration Network reputation edges (how lineages shaped the work)
+  'CONCEPTUAL_DEBT', 'ACTIVATING_RESONANCE', 'STRUCTURAL_INFLUENCE',
+  'BRIDGE_SYNTHESIS', 'INTERNAL_LINEAGE', 'EXTERNAL_THINKER', 'LIFE_EXPERIENCE',
 ]
 
 // Edge type label abbreviations for graph rendering
 export const EDGE_ABBREV = {
-  EMERGED_FROM:    '←born',
-  EXPRESSES:       'expr→',
-  REFINES:         'rfns→',
-  CREATED_BY:      'by→',
-  INSPIRED_BY:     'insp→',
-  EVOLVES_INTO:    '→evol',
-  DESCENDED_FROM:  '←desc',
-  RECOGNIZED_IN:   'recog',
-  CAPTURED_AS:     'capt→',
-  DISCUSSED_IN:    'disc→',
-  CONTRADICTS:     '≠',
-  TRANSLATES_INTO: '→trans',
-  OCCURRED_IN:     'in→',
-  PARTICIPATED_IN: 'part→',
-  TAKES_PLACE_AT:  'at→',
-  EMBODIED_AS:     'emb→',
-  DERIVES_FROM:    '←deriv',
-  INFLUENCED_BY:   '←infl',
-  REMIXES:         'remix',
-  BELONGS_TO:      'part-of',
+  EMERGED_FROM:         '←born',
+  EXPRESSES:            'expr→',
+  REFINES:              'rfns→',
+  CREATED_BY:           'by→',
+  INSPIRED_BY:          'insp→',
+  EVOLVES_INTO:         '→evol',
+  DESCENDED_FROM:       '←desc',
+  RECOGNIZED_IN:        'recog',
+  CAPTURED_AS:          'capt→',
+  DISCUSSED_IN:         'disc→',
+  CONTRADICTS:          '≠',
+  TRANSLATES_INTO:      '→trans',
+  OCCURRED_IN:          'in→',
+  PARTICIPATED_IN:      'part→',
+  TAKES_PLACE_AT:       'at→',
+  EMBODIED_AS:          'emb→',
+  DERIVES_FROM:         '←deriv',
+  INFLUENCED_BY:        '←infl',
+  REMIXES:              'remix',
+  BELONGS_TO:           'part-of',
+  // Inspiration Network
+  CONCEPTUAL_DEBT:      'debt→',
+  ACTIVATING_RESONANCE: 'resn→',
+  STRUCTURAL_INFLUENCE: 'struct→',
+  BRIDGE_SYNTHESIS:     'bridg→',
+  INTERNAL_LINEAGE:     'intl→',
+  EXTERNAL_THINKER:     'extl→',
+  LIFE_EXPERIENCE:      'life→',
 }
 
 // ── Protocol definitions ──────────────────────────────────────────────────────

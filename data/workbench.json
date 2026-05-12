@@ -1,0 +1,2366 @@
+{
+  "nodes": [
+    {
+      "id": "n-evan",
+      "type": "person",
+      "title": "Evan Silverman",
+      "content": "Primary user and builder of the Workbench. V_rel = Quality Time is the root equation. First node in the distributed contribution ledger.",
+      "context": "self",
+      "tags": [
+        "user",
+        "founder",
+        "node-001"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "mca-lens",
+      "type": "idea",
+      "title": "Lens",
+      "content": "A Lens is a portable analytical protocol — a configured way of viewing problems by rotating ideas through structured perspectives. Many per Vista; shareable across Vistas.",
+      "context": "Primitive",
+      "tags": [
+        "primitive",
+        "seed",
+        "vista-a-vista-u"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-six-elements-wu-jing-framework",
+      "type": "idea",
+      "title": "Six Elements / Wu Jing Framework",
+      "content": "Cognition and embodiment decomposed into six mutually-checking archetypal dimensions — air, water, fire, wood, metal, earth — each with a cognitive aspect, an embodied aspect, and a pathological side, usable as 'elemental daemons' for plural AI-assisted inquiry.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "seed",
+        "inspiration-net"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-lexems",
+      "type": "idea",
+      "title": "Lexems",
+      "content": "Translational units of meaning that travel across disciplinary silos — designed so the same underlying pattern can be recognized in different dialect-domains without being flattened to any one of them.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "seed",
+        "inspiration-net"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-programmable-attribution",
+      "type": "idea",
+      "title": "Programmable Attribution",
+      "content": "Programmable attribution makes intellectual lineage a first-class economic primitive.",
+      "context": "Feature",
+      "tags": [
+        "feature",
+        "seed",
+        "inspiration-net"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-personal-knowledge-kernel",
+      "type": "idea",
+      "title": "The Personal Knowledge Kernel",
+      "content": "The personal knowledge kernel is the seed from which all your other thinking grows.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "seed",
+        "vistas"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-recursive-creativity",
+      "type": "idea",
+      "title": "Recursive Creativity",
+      "content": "Recursive creativity: the act of making changes what you can make next.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "seed",
+        "vistas"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-economic-model-of-wisdom",
+      "type": "idea",
+      "title": "The Economic Model of Wisdom",
+      "content": "Wisdom is the economic primitive that neither information abundance nor AI can commoditize.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "seed",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-knowledge-tokens",
+      "type": "idea",
+      "title": "Knowledge Tokens",
+      "content": "Knowledge tokens make contribution to the residual economically legible.",
+      "context": "Feature",
+      "tags": [
+        "feature",
+        "seed",
+        "tokens"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-tokens",
+      "type": "idea",
+      "title": "Tokens",
+      "content": "Tokens route value back through the network that created it.",
+      "context": "Primitive",
+      "tags": [
+        "primitive",
+        "seed",
+        ""
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-contributocracy",
+      "type": "idea",
+      "title": "Contributocracy",
+      "content": "The governance model where standing flows from the quality of what you tend — and because reputation lives inside the health of the commons, tending the whole well is the rational move, not just the virtuous one.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "the-generative-"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-philosopher-builder",
+      "type": "idea",
+      "title": "The Philosopher-Builder",
+      "content": "Someone for whom thinking and making are the same act — where the architecture of what gets built is the argument, and the infrastructure is the philosophy at full resolution.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "quality-time-wo"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-generative-commons",
+      "type": "idea",
+      "title": "The Generative Commons",
+      "content": "A shared infrastructure where full contribution is safe, individual and network intelligence compound each other recursively, and the whole continuously generates more than its parts.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "inspiration-net"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-protocol-layer-eng-vistas-protocol-108-lo",
+      "type": "idea",
+      "title": "The Protocol Layer — ENG, VISTAs, Protocol 108, Logic Arc",
+      "content": "Protocols are the executable layer between philosophy and experience — the compression of insight into repeatable practices that others can run.",
+      "context": "Protocol",
+      "tags": [
+        "protocol",
+        "active",
+        "quality-time-ka"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-torus-first-living-geometry",
+      "type": "idea",
+      "title": "The Torus — First Living Geometry",
+      "content": "The Torus is the parent geometry of reciprocal becoming — the form in which inside becomes outside and outside returns as inside without rupture. Spanda is its pulse. Love is its meaning.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "non-duality-wit"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-quality-time-kairos-the-operating-system-for-",
+      "type": "idea",
+      "title": "Quality Time / Kairos — The Operating System for Human Flourishing",
+      "content": "Quality Time is the infrastructure for human flourishing in the AI age — the operating system for wisdom at scale, built by working backward from the end state of abundance and presence rather than forward from scarcity.",
+      "context": "Build",
+      "tags": [
+        "build",
+        "active",
+        "coherence-as-ca"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-ethical-alignment-lens",
+      "type": "idea",
+      "title": "Ethical Alignment Lens",
+      "content": "Every revenue stream should be classified: Regenerative → Supportive → Neutral → Extractive → Corrosive.",
+      "context": "Protocol",
+      "tags": [
+        "protocol",
+        "active",
+        "recursive-busin"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-infinite-business-model",
+      "type": "idea",
+      "title": "The Infinite Business Model",
+      "content": "A finite model extracts until depletion. An infinite model regenerates its own fuel.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "great-syntax-sh"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-contribution-as-ownership",
+      "type": "idea",
+      "title": "Contribution as Ownership",
+      "content": "Contributors are owners, not users. Ownership grows with contribution.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "tokens"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-outsider-s-moment",
+      "type": "idea",
+      "title": "Outsider's Moment",
+      "content": "The outsider's advantage: less debt, more freedom, and the tools have arrived.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "great-syntax-sh"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-trinity-recursive-fractal-convergent",
+      "type": "idea",
+      "title": "The Trinity: Recursive, Fractal, Convergent",
+      "content": "Build recursive, fractal, convergent — these are the physics of the exponential age.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-elevation-pattern",
+      "type": "idea",
+      "title": "The Elevation Pattern",
+      "content": "The elevation pattern is the structural signature of systems that compound human capacity.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-great-unwinding",
+      "type": "idea",
+      "title": "The Great Unwinding",
+      "content": "The Great Unwinding is the structural reorganization of civilization around abundance rather than scarcity.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "great-syntax-sh"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-data-context-wisdom-empowerment",
+      "type": "idea",
+      "title": "Data + Context = Wisdom = Empowerment",
+      "content": "Data + Context = Wisdom = Empowerment — the equation surveillance capitalism inverts.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-great-syntax-shift",
+      "type": "idea",
+      "title": "Great Syntax Shift",
+      "content": "We are changing the operating system of civilization from scarcity syntax to abundance syntax.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-generative-substrate",
+      "type": "idea",
+      "title": "Generative Substrate",
+      "content": "AI is drawing on a generative substrate it cannot see, measure, or replenish.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-vistas",
+      "type": "idea",
+      "title": "VISTAs",
+      "content": "VISTAs are cognitive lenses for inner coherence, not tools for outer optimization.",
+      "context": "Feature",
+      "tags": [
+        "feature",
+        "active",
+        "vistas"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-network-philanthropy",
+      "type": "idea",
+      "title": "Network Philanthropy",
+      "content": "Network philanthropy distributes capacity upstream rather than surplus downstream.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-attribution-arc-protocol",
+      "type": "idea",
+      "title": "Attribution Arc Protocol",
+      "content": "Attribution Arc is how the Inspiration Network remembers where ideas came from.",
+      "context": "Protocol",
+      "tags": [
+        "protocol",
+        "active",
+        "inspiration-net"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-recursive-coordination-protocol",
+      "type": "idea",
+      "title": "Recursive Coordination Protocol",
+      "content": "Coordination that learns from itself becomes exponentially more effective.",
+      "context": "Protocol",
+      "tags": [
+        "protocol",
+        "active",
+        "inspiration-net"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-shapley-attribution",
+      "type": "idea",
+      "title": "Shapley Attribution",
+      "content": "Shapley values distribute credit fairly when value is produced by combination, not isolation.",
+      "context": "Protocol",
+      "tags": [
+        "protocol",
+        "active",
+        "inspiration-net"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-scalar-vector-tensor-coherence",
+      "type": "idea",
+      "title": "Scalar-Vector-Tensor Coherence",
+      "content": "Coherence scales: scalar (inner) → vector (between two) → tensor (networked).",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-quality-time-as-infrastructure",
+      "type": "idea",
+      "title": "Quality Time as Infrastructure",
+      "content": "Quality Time is the infrastructure layer that collective intelligence requires to form.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "quality-time"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-inspiration-economy",
+      "type": "idea",
+      "title": "Inspiration Economy",
+      "content": "In the inspiration economy, you own the network and benefit as it grows.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "tokens"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-vista",
+      "type": "idea",
+      "title": "Vista",
+      "content": "Vista is the user-node primitive of the substrate — one per person — the digital soul layer with a selectively permeable membrane through which becoming is articulated and exchanged.",
+      "context": "Primitive",
+      "tags": [
+        "primitive",
+        "active",
+        "quality-time-su"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-logic-arc",
+      "type": "idea",
+      "title": "Logic Arc",
+      "content": "Logic Arc preserves the thinking process, not just the conclusion.",
+      "context": "Protocol",
+      "tags": [
+        "protocol",
+        "active",
+        "vistas-inspirat"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-philosophical-debt",
+      "type": "idea",
+      "title": "Philosophical Debt",
+      "content": "Philosophical debt is the cost of values not embodied.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-g-del-tension",
+      "type": "idea",
+      "title": "Gödel Tension",
+      "content": "What AI can't do is operate outside the system — that's where human value concentrates.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-inspiration-network",
+      "type": "idea",
+      "title": "Inspiration Network",
+      "content": "The Inspiration Network is the visible geometry of how knowledge compounds across minds.",
+      "context": "Primitive",
+      "tags": [
+        "primitive",
+        "active",
+        ""
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-coherence-lag",
+      "type": "idea",
+      "title": "Coherence Lag",
+      "content": "Coherence lag is the delay between being right and being recognized.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-quality-time",
+      "type": "idea",
+      "title": "Quality Time",
+      "content": "Quality Time is the generative condition for collective intelligence.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-coherence-as-capital",
+      "type": "idea",
+      "title": "Coherence as Capital",
+      "content": "Coherence is not a feeling — it is a compounding asset.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "active",
+        "foundational"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-attribution-arc",
+      "type": "idea",
+      "title": "Attribution Arc",
+      "content": "Attribution Arc makes intellectual lineage visible and durable.",
+      "context": "Protocol",
+      "tags": [
+        "protocol",
+        "active",
+        "inspiration-net"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-analog-computer-of-eudaimonia",
+      "type": "idea",
+      "title": "Analog Computer of Eudaimonia",
+      "content": "The attribution network doesn't measure flourishing — the live state of its relational activity is the computation of flourishing happening in real time.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "inspiration-net"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-interbeing",
+      "type": "idea",
+      "title": "Interbeing",
+      "content": "The self and other are not separate — they are mutually constituted through relation, which means inner work and community architecture are the same thing at different scales.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "relational-onto"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-recursive-business-model-mission-as-cause",
+      "type": "idea",
+      "title": "The Recursive Business Model — Mission as Cause, Business as Effect",
+      "content": "Mission and business are not two things in tension — they are the same fractal at two scales of resolution. The company is the echo of the cause.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "quality-time-ka"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-the-g-del-tension",
+      "type": "idea",
+      "title": "The Gödel Tension",
+      "content": "Human consciousness is an open system — it can step outside any formal framework and see truths the framework cannot derive. This is not a bug. It is the economic thesis of the AI age.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "non-duality-wit"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-sovereignty-unity-the-generative-paradox",
+      "type": "idea",
+      "title": "Sovereignty / Unity — The Generative Paradox",
+      "content": "Sovereignty and unity are not opposites to be balanced — in abundance syntax they are generative of each other. More of one produces more of the other when held in the right field.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "love-as-coheren"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-formless-form-executable-abstractions",
+      "type": "idea",
+      "title": "Formless → Form / Executable Abstractions",
+      "content": "Every durable thing begins as formless. The art is moving from qualia to code to culture without entropy leak — preserving the essence through every layer of concretization.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "non-duality-wit"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-non-duality-witnessed-duality",
+      "type": "idea",
+      "title": "Non-Duality / Witnessed Duality",
+      "content": "Duality is a compression algorithm for the infinite — and the practice is learning to hold both poles without collapsing them into one.",
+      "context": "Primitive",
+      "tags": [
+        "primitive",
+        "mature",
+        "love-as-coheren"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-love-as-coherence-the-structural-pattern-of-d",
+      "type": "idea",
+      "title": "Love as Coherence / The Structural Pattern of Durable Becoming",
+      "content": "Love is the noise-reducing, identity-preserving, recursive-loop-closing force in any system — the structural principle of coherence itself.",
+      "context": "Primitive",
+      "tags": [
+        "primitive",
+        "mature",
+        "coherence-as-ca"
+      ],
+      "createdAt": 1778610889985
+    },
+    {
+      "id": "mca-kairos-quality-time-the-generative-arc",
+      "type": "idea",
+      "title": "Kairos → Quality Time: The Generative Arc",
+      "content": "Kairos is the architecture. Quality Time is what it feels like to live inside it.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "foundational"
+      ],
+      "createdAt": 1778610889986
+    },
+    {
+      "id": "mca-the-recursive-business-model",
+      "type": "idea",
+      "title": "The Recursive Business Model",
+      "content": "The business model that tends the engine rather than burning it.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "great-syntax-sh"
+      ],
+      "createdAt": 1778610889986
+    },
+    {
+      "id": "mca-change-the-syntax-change-the-world",
+      "type": "idea",
+      "title": "Change the Syntax, Change the World",
+      "content": "You cannot produce abundance-based outcomes with scarcity-based syntax.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "great-syntax-sh"
+      ],
+      "createdAt": 1778610889986
+    },
+    {
+      "id": "mca-lineages-in-objects",
+      "type": "idea",
+      "title": "Lineages in Objects",
+      "content": "Every object is a compressed lineage of human ingenuity — most of it invisible.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "foundational"
+      ],
+      "createdAt": 1778610889986
+    },
+    {
+      "id": "mca-price-as-lossy-compression",
+      "type": "idea",
+      "title": "Price as Lossy Compression",
+      "content": "Price coordinates by erasing context — efficient for markets, fatal for knowledge.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "foundational"
+      ],
+      "createdAt": 1778610889986
+    },
+    {
+      "id": "mca-the-residual",
+      "type": "idea",
+      "title": "The Residual",
+      "content": "Residual = Trust × Attention × Time → the compound interest of collective intelligence.",
+      "context": "Core Concept",
+      "tags": [
+        "core-concept",
+        "mature",
+        "foundational"
+      ],
+      "createdAt": 1778610889986
+    },
+    {
+      "id": "collab-jens-jorgensen",
+      "type": "person",
+      "title": "Jens Jorgensen",
+      "content": "Jens Jorgensen is a product designer and writer whose Substack 'Figure & Ground' works at the intersection of AI product design, epistemology, and ontology. He and Evan are in active bilateral dialogue via Substack messenger — each reading and responding to the other's work with genuine intellectual engagement. The relationship is peer-to-peer, not hierarchical. Jens brings a design practitioner's",
+      "context": "Philosopher",
+      "tags": [
+        "philosopher",
+        "warm"
+      ],
+      "createdAt": 1778610889988
+    },
+    {
+      "id": "collab-klaus-mager",
+      "type": "person",
+      "title": "Klaus Mager",
+      "content": "Klaus Mager is a member of the Future HOW community (AI-Augmented Wisdom Praxis Seminar / wAIser Expedition convened by George Pór through the Schumacher Institute). Two emails on file: 1klaus.mager@gmail.com (personal) and klaus@foodwiththought.org (work). The work domain suggests his primary professional focus is food systems / regenerative agriculture / sustainability — a lineage edge worth und",
+      "context": "Philosopher",
+      "tags": [
+        "philosopher",
+        "active"
+      ],
+      "createdAt": 1771804800000
+    },
+    {
+      "id": "collab-pascal-bitsch",
+      "type": "person",
+      "title": "Pascal Bitsch",
+      "content": "Pascal Bitsch is a core operational member of the Future HOW community (AI-Augmented Wisdom Praxis convened by George Pór). His specific role in the architecture is significant: he is the project circles framing architect and HumHub platform steward — the operational backbone of the expedition's action research structure.\n\nFrom the Orientation Base Camp (Jan 26, 2026), Pascal described project cir",
+      "context": "Builder",
+      "tags": [
+        "builder",
+        "active"
+      ],
+      "createdAt": 1771804800000
+    },
+    {
+      "id": "collab-johan-wilburg",
+      "type": "person",
+      "title": "Johan Wilburg",
+      "content": "Johan is a philosopher-empiricist working at the intersection of AI and wisdom practices. He tested 8 approaches to wisdom-augmenting AI in a personal experiment (March 2026), finding that general-purpose models with thoughtful prompts outperformed commercial wisdom tools. His highest-scoring result (4/5) came from Claude Sonnet 4.6 roleplaying the Aiden Cinnamon Tea protocol — which it had first ",
+      "context": "Philosopher",
+      "tags": [
+        "philosopher",
+        "warm"
+      ],
+      "createdAt": 1778610889988
+    },
+    {
+      "id": "collab-gen-zendahl",
+      "type": "person",
+      "title": "Gen Zendahl",
+      "content": "Visual artist and writer, UK-based, physically working the land alongside her intellectual work (the material/meaning integration is a deliberate practice, not incidental). Has aphantasia — no mind's eye, minimal internal voice — which means she thinks in concepts and geometry rather than images, and gravitates toward translator units and pattern-recognition across domains. Core construct in devel",
+      "context": "Philosopher",
+      "tags": [
+        "philosopher",
+        "active"
+      ],
+      "createdAt": 1776124800000
+    },
+    {
+      "id": "collab-daniel-durrant",
+      "type": "person",
+      "title": "Daniel Durrant",
+      "content": "Future HOW philosopher and builder, developing his own knowledge architecture (the 'Co-sphere') with a distinctive technical stack centered on time-bounded elemental-archetype encounters rather than long-term lineage. Background in communication strategy and memetics; deliberately broke from Dawkins-lineage memetics after recognizing its capture by military-industrial narrative warfare. Mentored b",
+      "context": "Philosopher",
+      "tags": [
+        "philosopher",
+        "active"
+      ],
+      "createdAt": 1776124800000
+    },
+    {
+      "id": "collab-anthony-torres",
+      "type": "person",
+      "title": "Anthony Torres",
+      "content": "Anthony Torres is an engineer with a history going back to the early Kairos/Quality Time period (2024). First recorded meetings were via Jason Glickman in September and October 2024. A direct Evan <> Anthony session was recorded October 30, 2025. Re-engaged in April 2026 to help build the contribution ledger / knowledge graph architecture for the distributed dynamic cap table. On 4/22/2026, pitche",
+      "context": "Builder",
+      "tags": [
+        "builder",
+        "active"
+      ],
+      "createdAt": 1778610889988
+    },
+    {
+      "id": "collab-terry-cooke-davies",
+      "type": "person",
+      "title": "Terry Cooke-Davies",
+      "content": "Terry Cooke-Davies is a Distinguished Fellow of the Schumacher Institute writing from Folkestone, UK. His Substack 'The Pond and the Pulse' explores the intersection of AI, civilizational acceleration, and the conditions for wisdom. His 'The Other Acceleration' series introduced the compression/decompression frame as a way of understanding the full arc of symbolic intelligence across the history o",
+      "context": "Philosopher",
+      "tags": [
+        "philosopher",
+        "warm"
+      ],
+      "createdAt": 1775865600000
+    },
+    {
+      "id": "collab-natasha-gauthier",
+      "type": "person",
+      "title": "Natasha Gauthier",
+      "content": "Natasha Gauthier: AI Platform Product Executive, founder of BuildingBeyond.AI, author of Beyond False Wisdom, UN advisor on responsible AI. 20+ years in enterprise data and analytics (most recently Salesforce, $700M+ ARR). Seattle-based.\n\nArrived at Quality Time's questions from the inside of large-scale extractive systems — the practitioner's path. Deep personal cost paid (Salesforce undermined h",
+      "context": "Partner",
+      "tags": [
+        "partner",
+        "active"
+      ],
+      "createdAt": 1775001600000
+    },
+    {
+      "id": "collab-griffin",
+      "type": "person",
+      "title": "Griffin",
+      "content": "Griffin appears in two early Kairos sessions — an introductory meeting in July and a deeply substantive session in August (300+ questions, 22+ action items — the second highest question count in the entire founding period). This suggests a significant potential partnership or investment conversation.",
+      "context": "Partner",
+      "tags": [
+        "partner",
+        "warm"
+      ],
+      "createdAt": 1722470400000
+    },
+    {
+      "id": "collab-prezenter",
+      "type": "person",
+      "title": "Prezenter",
+      "content": "Prezenter was an active product partnership through the late Kairos period — 4 sessions from December 2024 through January 2025 including 'Deck — finalize for Prezenter' (Dec 13) and 'Kairos — The Prezenter design talk' (Jan 3). This was clearly a live product integration or go-to-market partnership that consumed significant team energy.",
+      "context": "Partner",
+      "tags": [
+        "partner",
+        "warm"
+      ],
+      "createdAt": 1737590400000
+    },
+    {
+      "id": "collab-chris-kairos-team",
+      "type": "person",
+      "title": "Chris (Kairos team)",
+      "content": "A fifth Kairos team member with a @buildkairos.com email, appearing in a one-on-one with Evan on Feb 11, 2025. Distinct from Chris Cole (carlomarx@gmail.com). Full name and role unknown.",
+      "context": "Builder",
+      "tags": [
+        "builder",
+        "warm"
+      ],
+      "createdAt": 1739232000000
+    },
+    {
+      "id": "collab-katie-bapple",
+      "type": "person",
+      "title": "Katie Bapple",
+      "content": "Katie Bapple is a fourth core Kairos team member, active from at least October 2024 through November 2024. She organized the 'Kairos Tech Team Meeting' and ran many of the early external outreach sessions (Matt Johnson, Jairo Romo, James, Jake, Jane Khodarkovsky). She was present at the pivotal 'Kairos Equity, Fundraising & Roles' session (Oct 11, 418+ questions) — a founding-era governance conver",
+      "context": "Builder",
+      "tags": [
+        "builder",
+        "warm"
+      ],
+      "createdAt": 1730851200000
+    },
+    {
+      "id": "collab-francesco-piras",
+      "type": "person",
+      "title": "Francesco Piras",
+      "content": "Francesco Piras is at Brightnode (brightnode.io) — a European collaborator who appears from December 2024 through February 2025. He organized his own Fireflies meetings for the Kairos sessions, suggesting real investment in the collaboration. The 'Workshop Kairos' session (Dec 3, 162+ questions) included lars.schlichting@lexify.io and team@buildkairos.com — a broad workshop format. He later had 'K",
+      "context": "Partner",
+      "tags": [
+        "partner",
+        "warm"
+      ],
+      "createdAt": 1738627200000
+    },
+    {
+      "id": "collab-tom-morgan",
+      "type": "person",
+      "title": "Tom Morgan",
+      "content": "Tom Morgan had a one-on-one session with Evan on December 13, 2024 — during an extremely active day (Anthon meeting, MYST/Cassandra/Eduardo meeting, and Tom Morgan all on the same day). The timing suggests he may have been a significant contact at a critical Kairos juncture.",
+      "context": "Advisor",
+      "tags": [
+        "advisor",
+        "warm"
+      ],
+      "createdAt": 1734048000000
+    },
+    {
+      "id": "collab-owais",
+      "type": "person",
+      "title": "Owais",
+      "content": "Owais is from Team-GPT, a collaborative AI platform. He appeared in a formal demo call with Evan and Jason in February 2025, suggesting Kairos was evaluating or piloting Team-GPT as infrastructure. The 'Demo Call' framing suggests this was an early exploration of Team-GPT as a tool for the Kairos team's collaborative work.",
+      "context": "Partner",
+      "tags": [
+        "partner",
+        "warm"
+      ],
+      "createdAt": 1740355200000
+    },
+    {
+      "id": "collab-rashmi-shah",
+      "type": "person",
+      "title": "Rashmi Shah",
+      "content": "Rashmi Shah was at NASA/JPL — a scientist and systems thinker whose collaboration brought rare empirical and cosmic grounding to Evan's philosophical work during the Kairos era. Her full name was confirmed from the Oct 28, 2024 Fireflies record ('30 Minute Meeting with Rashmi Shah'). She was deeply woven into the Kairos team from the very beginning — appearing in team-organized onboarding meetings",
+      "context": "Advisor",
+      "tags": [
+        "advisor",
+        "warm"
+      ],
+      "createdAt": 1751241600000
+    },
+    {
+      "id": "collab-anthon",
+      "type": "person",
+      "title": "Anthon",
+      "content": "Anthon Hollstein-Ivarsson is the ☰️ Thursday standing on the calendar — a recurring philosophical or contemplative dialogue partner. His company is likewater.ai, an AI-adjacent venture. Fireflies records show recurring meetings from at least September 2025 through January 2026, with high question density (43–231+ questions per session) suggesting deep generative dialogue rather than operational ch",
+      "context": "Philosopher",
+      "tags": [
+        "philosopher",
+        "active"
+      ],
+      "createdAt": 1774483200000
+    },
+    {
+      "id": "collab-miko-tam",
+      "type": "person",
+      "title": "Miko Tam",
+      "content": "Miko Tam is the CEO and Founder of MYST Advisors (CFA). He is the principal of the MYST venture alongside Brett. He appeared in both the Dec 26 MYST AI Discussion and Feb 4 MYST AI Update sessions. Notably, after the Dec 26 Fireflies recap was sent, Miko replied directly: 'Pretty cool…better than my note! Excited to work with you guys.' This suggests he is engaged with both the AI infrastructure a",
+      "context": "Partner",
+      "tags": [
+        "partner",
+        "active"
+      ],
+      "createdAt": 1770163200000
+    },
+    {
+      "id": "collab-cassandra-ferrara",
+      "type": "person",
+      "title": "Cassandra Ferrara",
+      "content": "Cassandra Ferrara was Kairos core team from the very first recorded meeting (July 5, 2024 — 'Product — MVP: FIRST recorded Kairos meeting, Cassandra shared with Evan') through at least November 7, 2025 (Standing Friday). That is 16+ months of continuous presence.\n\nShe came in through a job posting but her actual function — synthesizer — was never titled. She held the thread between Evan's raw phil",
+      "context": "Advisor",
+      "tags": [
+        "advisor",
+        "active"
+      ],
+      "createdAt": 1776902400000
+    },
+    {
+      "id": "collab-jason-glickman",
+      "type": "person",
+      "title": "Jason Glickman",
+      "content": "Jason Glickman was Evan's co-founder of Kairos (2024 – mid-2025). Currently at Tribal Ventures (jglickman@tribalventures.com) and running his own post-dissolution venture, Flow State, which uses vocabulary and architecture carried forward from the Kairos co-founding period (Passport, Novas, Sparks, Bounties, Guilds, Spaces, Meta Space, Orbit, Flow Games, Launchpads).\n\nThe relationship has four pha",
+      "context": "Builder",
+      "tags": [
+        "builder",
+        "warm"
+      ],
+      "createdAt": 1758672000000
+    },
+    {
+      "id": "collab-claudio-souza",
+      "type": "person",
+      "title": "Claudio Souza",
+      "content": "Monika Proffitt (monikaproffitt@gmail.com) is someone Evan met during the Kairos era but who was never part of the Kairos team — an off-and-on collaboration that ran in parallel. Multiple contexts: the M&E sessions, a three-way with Cassandra, and the recurring 'act 2' sessions that ran Oct 2025 – Jan 2026. The 'act 2' framing suggests the relationship had a prior chapter (act 1) and a renewed per",
+      "context": "Advisor",
+      "tags": [
+        "advisor",
+        "active"
+      ],
+      "createdAt": 1767657600000
+    },
+    {
+      "id": "collab-eduardo-chapeta",
+      "type": "person",
+      "title": "Eduardo Chapeta",
+      "content": "Eduardo Chapeta is at iw-global.com (IW Global). He appears in the large cross-venture meeting in Sep 2025 alongside Paul, Brett, Evan, and Cassandra, and in a smaller Cassandra/Eduardo/Evan session in Aug 2025. His presence alongside Brett and Paul in the MYST-adjacent context suggests he may have been exploring a connection between IW Global and the MYST/Quality Time ventures.",
+      "context": "Partner",
+      "tags": [
+        "partner",
+        "warm"
+      ],
+      "createdAt": 1756857600000
+    },
+    {
+      "id": "collab-adam-wolfberg",
+      "type": "person",
+      "title": "Adam Wolfberg",
+      "content": "Head of Hurricane Capital. Appears in the Feb 4 cross-venture meeting with Paul and Evan, covering platform strategy connecting Hurricane's institutional focus with a broader retail/RIA/institutional segmentation model. The meeting topics — Knowledge Graphs, Reputation Systems, institutional vs. retail signal flows — suggest Hurricane and MYST/Quality Time share architectural DNA.",
+      "context": "Partner",
+      "tags": [
+        "partner",
+        "active"
+      ],
+      "createdAt": 1770163200000
+    },
+    {
+      "id": "collab-george-por",
+      "type": "person",
+      "title": "George Por",
+      "content": "Philosopher and collaborator in Future HOW / wAIser community. This weekend sent a generative dialogue paper — 'Anurūpa, Pratyabhijñā, and Mutual Calibration in Collaborative Hybrid Intelligence' — extending Evan's anurūpa framing into CHI and introducing sympoiesis (Haraway/Margulis). Returned the paper to Evan before escalating, enacting attribution in practice. Jan 21 session with Kate and Evan",
+      "context": "Philosopher",
+      "tags": [
+        "philosopher",
+        "active"
+      ],
+      "createdAt": 1774828800000
+    },
+    {
+      "id": "collab-brett-silverman",
+      "type": "person",
+      "title": "Brett Silverman",
+      "content": "Evan's brother and MYST partner. Two standing weekly meetings: the Brett+Evan 1:1 and the BPE trio with Paul Dlug. In the Workbench context, Brett functions as three things at once:\n\n(1) Domain bridge — taking Evan's abstract frameworks and routing them into financial/investment terrain where he applies them to real client work and public-company plays. The Popmart/Labubu short thesis is the worke",
+      "context": "Family",
+      "tags": [
+        "family",
+        "active"
+      ],
+      "createdAt": 1774483200000
+    },
+    {
+      "id": "collab-victor-vorski",
+      "type": "person",
+      "title": "Victor Vorski",
+      "content": "Organizes the wAIser Expedition monthly basecamp — 21 participants, 4th Monday of each month, spanning Seattle/London/Paris/Delhi time zones. Structural convener of the Future HOW community. Feb 23 session: 77+ questions, 6+ action items — substantively active. The container-creator whose space enables the George/Evan collaboration.",
+      "context": "Community",
+      "tags": [
+        "community",
+        "active"
+      ],
+      "createdAt": 1771804800000
+    },
+    {
+      "id": "collab-kate-smith",
+      "type": "person",
+      "title": "Kate Smith",
+      "content": "Future HOW member and co-facilitator. Appears in Jan 21 three-way session with George and Evan (78+ questions). Invited Fireflies to the Feb 23 wAIser session, suggesting an organizational role. Spans both community and intimate philosophical conversation formats.",
+      "context": "Community",
+      "tags": [
+        "community",
+        "active"
+      ],
+      "createdAt": 1768953600000
+    },
+    {
+      "id": "collab-paul-dlug",
+      "type": "person",
+      "title": "Paul Dlug",
+      "content": "Paul is Evan's most active and consistent builder collaborator and the primary engineering node in the MYST prototype. He appears across three recurring containers: Evan and Paul standing (Thursday, operational), Evan Paul standing Friday / quality time (Friday, the creative container), and ad hoc sessions. Paul built the MYST working prototype. The Quality Time Friday meeting is the deepest co-cr",
+      "context": "Builder",
+      "tags": [
+        "builder",
+        "active"
+      ],
+      "createdAt": 1775088000000
+    },
+    {
+      "id": "fn-reputation-as-lived-process-case-study-no-001",
+      "type": "artifact",
+      "title": "Reputation as Lived Process — Case Study No. 001 (Paul Dlug, Dec 2025–May 2026)",
+      "content": "Reputation as Process / Commitment Ledger / Lived Asymmetry / Sensing-to-Naming Gap",
+      "context": "🔥 High · Mature",
+      "tags": [
+        "foundational",
+        "analytical",
+        "convergence"
+      ],
+      "createdAt": 1778025600000
+    },
+    {
+      "id": "fn-two-year-arc-lessons-about-myself-may-6-2026",
+      "type": "artifact",
+      "title": "Two-Year Arc — Lessons About Myself (May 6, 2026)",
+      "content": "Two-Year Arc / Personal PMF / Vision Without Completion / Empathy Surface",
+      "context": "🔥 High · Mature",
+      "tags": [
+        "foundational",
+        "integrated",
+        "convergence"
+      ],
+      "createdAt": 1778025600000
+    },
+    {
+      "id": "fn-coherent-individuals-remembering-networks-and",
+      "type": "artifact",
+      "title": "Coherent Individuals, Remembering Networks, and Living Economics — The Three-Primitive Interlock",
+      "content": "The interlock of Vistas / Inspiration Network / Knowledge Tokens as the three-layer architecture for any AI-enabled regenerative network",
+      "context": "🔥 High · Mature",
+      "tags": [
+        "foundational",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1777420800000
+    },
+    {
+      "id": "fn-an-ontology-with-an-epistemology-trusting-the",
+      "type": "artifact",
+      "title": "An Ontology With an Epistemology — Trusting the Universe as Coherence",
+      "content": "Trusting the universe as the epistemological expression of a relational ontology. When your way of seeing (ontology) and your way of knowing (epistemology) are coherent with each other, you stop fighting yourself. Following the feeling is not abandoning rigor — it is rigor operating at the right level.",
+      "context": "🔥 High · Mature",
+      "tags": [
+        "foundational",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1775088000000
+    },
+    {
+      "id": "fn-light-in-the-darkness-the-root-transmission-2",
+      "type": "artifact",
+      "title": "Light in the Darkness — The Root Transmission (2020)",
+      "content": "The 2020 contemplative transmission as the spiritual root of the entire arc. 'Be a light in the darkness, make your life an act of love and service, reprogram the system.' The origin that all subsequent frameworks are operationalizing.",
+      "context": "🔥 High · Mature",
+      "tags": [
+        "foundational",
+        "contemplative",
+        "eureka"
+      ],
+      "createdAt": 1583020800000
+    },
+    {
+      "id": "fn-session-arc-april-2-2026-the-day-the-root-sen",
+      "type": "artifact",
+      "title": "Session Arc — April 2 2026 — The Day the Root Sentence Arrived",
+      "content": "Session arc — April 2 2026. Lineage recovery generating forward motion. Coherence lag, distributed dynamic cap table, sovereignty and emergence as necessary conditions, AI as mirror vs prosthetic, the dependency complications.",
+      "context": "🔥 High · Mature",
+      "tags": [
+        "foundational",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1775088000000
+    },
+    {
+      "id": "fn-sovereignty-and-emergence-the-root-recognitio",
+      "type": "artifact",
+      "title": "Sovereignty and Emergence — The Root Recognition",
+      "content": "Sovereignty and emergence as necessary conditions for each other — the root insight underneath Vista, Inspiration Network, Knowledge Tokens, and the distributed dynamic cap table of emergence. The architectural answer to the individual-collective problem that every community, company, DAO, and expert network has failed to solve.",
+      "context": "🔥 High · Mature",
+      "tags": [
+        "foundational",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1775088000000
+    },
+    {
+      "id": "fn-the-two-awakenings-founding-transmissions-of-",
+      "type": "artifact",
+      "title": "The Two Awakenings — Founding Transmissions of the Work",
+      "content": "There were two awakenings, not one. They are five years apart and categorically different.\n\nIn 2020, during COVID, a transmission arrived: be a light in the darkness. Make your life an act of love and service. This was an imperative — a reorientation of purpose so complete that it ended 26 years in finance and began everything that followed. It gave direction but not yet ground truth. It said where to go without yet showing why the destination was real.\n\nOn Thanksgiving 2025, the ground truth ar",
+      "context": "🔥 High · Mature",
+      "tags": [
+        "foundational",
+        "contemplative",
+        "eureka"
+      ],
+      "createdAt": 1775001600000
+    },
+    {
+      "id": "fn-the-innovation-equation-original-compression-",
+      "type": "artifact",
+      "title": "The Innovation Equation — Original Compression (v0)",
+      "content": "Original equation:\n\nI ∝ A³ · N + ε − Cd\n\nWhere:\n- I = Innovation / economic output\n- A = AI influence (reducing constraints: cost, time, friction) \n- N = Network effects amplifying innovation and collaboration\n- ε = Emergence / human creativity — the irreducible nonlinear term\n- Cd = Discovery cost (effort and resources needed to generate new knowledge)\n\nCore insight: AI collapses the cost, time, and effort needed to create goods, services, and knowledge. Value creation becomes faster, more dist",
+      "context": "❄️ Low · Mature",
+      "tags": [
+        "foundational",
+        "analytical",
+        "spark"
+      ],
+      "createdAt": 1740700800000
+    },
+    {
+      "id": "fn-deep-book-lineage-deutsch-taylor-azarian-the-",
+      "type": "artifact",
+      "title": "Deep Book Lineage — Deutsch, Taylor, Azarian + The Hidden Fourth",
+      "content": "Personal resonance lineage for the three primary intellectual assemblers — how each book actually propagated into the current body of work, plus lived experience as the hidden fourth influence that turned theory into conviction",
+      "context": "🔥 High · Mature",
+      "tags": [
+        "inspiration-net",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1746057600000
+    },
+    {
+      "id": "fn-field-note-mind-map-lineage-and-recursive-sel",
+      "type": "artifact",
+      "title": "Field Note: Mind Map, Lineage, and Recursive Self-Architecture",
+      "content": "Recursive self-architecture; lineage-first synthesis; Kairos as emergent synthesis node; Evan ↔ Kairos recursive co-constitution; map = self",
+      "context": "🌤 Medium · Mature",
+      "tags": [
+        "foundational",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1746057600000
+    },
+    {
+      "id": "fn-the-network-as-economic-primitive",
+      "type": "artifact",
+      "title": "The Network as Economic Primitive",
+      "content": "In an agent-saturated world, the irreducible unit of value shifts from product to network. Ownership is the lock that keeps networks coherent. Attribution preserves their living memory.",
+      "context": "🔥 High · Mature",
+      "tags": [
+        "foundational",
+        "analytical",
+        "eureka"
+      ],
+      "createdAt": 1767225600000
+    },
+    {
+      "id": "fn-the-vanishing-gallery",
+      "type": "artifact",
+      "title": "The Vanishing Gallery",
+      "content": "Art as Final Scarcity · Possession vs. Witnessing · Value in the Expertise Age",
+      "context": "🔥 High · Mature",
+      "tags": [
+        "foundational",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1761955200000
+    },
+    {
+      "id": "fn-attribution-and-co-creation-comprehensive-sum",
+      "type": "artifact",
+      "title": "Attribution and Co-Creation: Comprehensive Summary Frame",
+      "content": "Attribution as trust, memory, and innovation infrastructure for collective intelligence",
+      "context": "Mature",
+      "tags": [
+        "inspiration-net",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1774137600000
+    },
+    {
+      "id": "fn-the-more-i-do-the-more-i-see-myself-seeing",
+      "type": "artifact",
+      "title": "The More I Do The More I See Myself Seeing",
+      "content": "The lived experience of the Workbench performing its function. Not a description of the product. The product working. The fifth act as a felt experience of building — anugraha arriving through the act of construction itself.",
+      "context": "Mature",
+      "tags": [
+        "foundational",
+        "contemplative",
+        "eureka"
+      ],
+      "createdAt": 1774051200000
+    },
+    {
+      "id": "fn-gratitude-as-infrastructure-v1-4",
+      "type": "artifact",
+      "title": "Gratitude as Infrastructure — v1.4",
+      "content": "v1.4 integrates the fractal frame and Nobel grounding into the existing essay structure. Three insertions:\n\n(1) The clunky 'though it is certainly that' sentence replaced with: 'Two consecutive Nobel Prizes in Economics have recently confirmed what intuition already suspects: genius is relational to the conditions it operates within. The 2025 laureates showed that sustained innovation requires networks of useful knowledge, shared competence, and institutions that allow emergence rather than bloc",
+      "context": "Mature",
+      "tags": [
+        "inspiration-net",
+        "integrated"
+      ],
+      "createdAt": 1774051200000
+    },
+    {
+      "id": "fn-gratitude-as-infrastructure",
+      "type": "artifact",
+      "title": "Gratitude as Infrastructure",
+      "content": "In a co-creative world, the mechanism that makes contribution legible to the system is attribution — not compensation. Same structural role. Compensation clears accounts in money. Attribution clears in gravity: pull toward more collaboration, more resonance, more of the right people. But attribution as currently practiced has no clearing mechanism — it sits passive, a footnote.\n\nGratitude is the deeper root. Once creation is seen clearly, the myth of the isolated genius breaks down. Thought is i",
+      "context": "Mature",
+      "tags": [
+        "inspiration-net",
+        "integrated"
+      ],
+      "createdAt": 1774051200000
+    },
+    {
+      "id": "fn-kairos-and-quality-time-two-layers-of-one-arc",
+      "type": "artifact",
+      "title": "Kairos and Quality Time: Two Layers of One Architecture",
+      "content": "Kairos is the philosophical foundation and primitive architecture.\n\nIt contains:\n- The structural invariants (the Coordination Kernel, the six rules)\n- The macro primitives (Vistas, Inspiration Network, Tokens)\n- The economic thesis (the Residual, the Generative Substrate, Shapley Attribution)\n- The philosophical claims (Gödel Tension, Philosophical Debt, Coherence as Capital)\n- The historical grounding (Axial Age, Republic of Letters, Great Syntax Shift)\n\nKairos answers: what is the architectur",
+      "context": "Mature",
+      "tags": [
+        "foundational"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "fn-vistas-full-technical-memo",
+      "type": "artifact",
+      "title": "VISTAs — Full Technical Memo",
+      "content": "VISTAs are consciously chosen contexts ('lenses') that a person designs, refines, and evolves over time to guide: how information is taken in, how work is created and contributed, and how the self is understood in relation to the world.\n\nFour functional components of a VISTA:\n1. Inputs — data sources, communities, artifacts, selected signals\n2. Structure — how information is framed into problems, projects, questions\n3. Tone/Tempo — interface ethos (slow/reflective vs fast/opportunistic)\n4. Norma",
+      "context": "Mature",
+      "tags": [
+        "vistas"
+      ],
+      "createdAt": 1770508800000
+    },
+    {
+      "id": "fn-geb-vista-six-phase-thinking-protocol",
+      "type": "artifact",
+      "title": "GEB Vista — Six-Phase Thinking Protocol",
+      "content": "The GEB Vista is a thinking protocol for exploring complex ideas involving paradox, recursion, self-reference, multiple levels of structure, and emergent meaning. It integrates three complementary lenses:\n\n- Gödel — self-reference, incompleteness, boundary-finding\n- Escher — recursion, nesting, fractals, visual paradoxes\n- Bach — themes, variations, patterns across levels\n\nThe six phases form a complete strange-loop cycle:\n\n1. FRAME — Define the initial inquiry. This becomes Level-0.\n2. GÖDEL PA",
+      "context": "Mature",
+      "tags": [
+        "vistas"
+      ],
+      "createdAt": 1769299200000
+    },
+    {
+      "id": "fn-the-recursive-business-model",
+      "type": "artifact",
+      "title": "The Recursive Business Model",
+      "content": "Traditional platforms extract value from participants. Kairos inverts this:\n- Instead of monetizing attention, monetize human capability\n- Instead of extracting value, amplify it\n- Instead of separating mission from business, unify them\n\nThe result is a positive-sum economic model where more human empowerment is not a cost to the business — it IS the business.\n\nThe structural mechanism is recursive:\n1. More learning → more creativity\n2. More creativity → better innovations\n3. Better innovations ",
+      "context": "Mature",
+      "tags": [
+        "foundational"
+      ],
+      "createdAt": 1740096000000
+    },
+    {
+      "id": "fn-the-workbench-proved-itself",
+      "type": "artifact",
+      "title": "The Workbench Proved Itself",
+      "content": "The most important design insight from the first Workbench session: the system proved itself by being used to build itself.\n\nWe captured thinking as Field Notes without data entry — just conversation.\nWe traced lineage from lived experience through Mosaics into crystallized frameworks — without reconstructing it from scratch.\nWe seeded an Atlas of 34 concepts from years of scattered work — in a single session.\nWe built the Inspiration Network by mapping edges we already knew were there — they ju",
+      "context": "Mature",
+      "tags": [
+        "foundational"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "fn-metering-the-invisible-engine-why-the-residua",
+      "type": "artifact",
+      "title": "Metering the Invisible Engine: Why the Residual Is the New Scarcity",
+      "content": "Layer 1 — The Bridge: The shape of value flow has changed from linear to recursive loops compounding at machine speed. That geometry change changes the logic of what rational self-interest demands. In tight loops, narrow extraction becomes self-defeating faster — the highest-leverage move is now to proactively tend the loop itself. This isn't altruism. It's the math.\n\nLayer 2 — What Is the Residual, Really? In 1957, Robert Solow showed that capital and labor explained only a small fraction of U.",
+      "context": "Mature",
+      "tags": [
+        "foundational"
+      ],
+      "createdAt": 1773100800000
+    },
+    {
+      "id": "fn-the-regenerative-coordination-protocol",
+      "type": "artifact",
+      "title": "The Regenerative Coordination Protocol",
+      "content": "Layer 1 — The Observation: Markets, open-source communities, scientific discovery, and living ecosystems all appear to obey the same small set of structural constraints. When respected, systems become adaptive and generative. When violated, they degrade — invisibly at first, then catastrophically.\n\nLayer 2 — The Coordination Kernel: Six structural invariants distilled from classical capitalism, now requiring more explicit application as loops tighten and scarcities shift upstream:\n1. Defined Rig",
+      "context": "Mature",
+      "tags": [
+        "foundational"
+      ],
+      "createdAt": 1773100800000
+    },
+    {
+      "id": "fn-the-hand-is-becoming-visible",
+      "type": "artifact",
+      "title": "The Hand Is Becoming Visible",
+      "content": "Smith's invisible hand worked because price encoded scarcity. Scarcity disciplined behavior. Incentives coordinated without a coordinator because 'not enough' was universal and legible.\n\nBut exponential networks — AI, near-zero marginal costs, instant iteration, traceable attribution — have collapsed time, cost, and friction across vast areas of value creation. When that happens, the price signal begins to overfit. Extraction can degrade trust faster than it captures value.\n\nSocial media is the ",
+      "context": "Mature",
+      "tags": [
+        "foundational"
+      ],
+      "createdAt": 1772409600000
+    },
+    {
+      "id": "fn-we-solved-for-the-wrong-variable",
+      "type": "artifact",
+      "title": "We Solved for the Wrong Variable",
+      "content": "Systems designed around the assumption that people can't reason well will produce people who don't reason well. The assumption becomes self-fulfilling.\n\nThe deeper tragedy is timing: the moment we collectively gave up on the informed citizen is roughly the same moment the tools for genuine mass education became more powerful than anything in history. We abandoned the ideal just as it became achievable.\n\nThis wasn't malice. It was loving paternalism. Which is precisely why it was never interrogat",
+      "context": "Mature",
+      "tags": [
+        "foundational"
+      ],
+      "createdAt": 1773446400000
+    },
+    {
+      "id": "fn-the-inspiration-network-knowledge-graph-of-re",
+      "type": "artifact",
+      "title": "The Inspiration Network: Knowledge Graph of Resonance",
+      "content": "The Inspiration Network is a knowledge graph built on resonance rather than citation. Before creating forward, a creator tags backward — attributing inspiration to the people and sources that shaped their work.\n\nKey distinction from citation networks: resonance is prospective and voluntary (I tag you because your work moved mine forward) rather than retrospective and imposed (I cite you because convention requires it).\n\nEdge types: conceptual debt, activating resonance, structural influence, bri",
+      "context": "Mature",
+      "tags": [
+        "inspiration-net"
+      ],
+      "createdAt": 1773187200000
+    },
+    {
+      "id": "fn-socrates-the-original-prompt-engineer",
+      "type": "artifact",
+      "title": "Socrates, the Original Prompt Engineer",
+      "content": "The essay opens with a museum anecdote — a student who used AI to research a museum visit but arrived on a Monday when it was closed. This becomes the launch pad for a meditation on attention as the scarce resource in the AI age.\n\nThe central argument: Socrates was the original prompt engineer. His method — the elenchus — wasn't about delivering answers. It was about asking questions that forced the interlocutor to examine their own assumptions. The midwife metaphor is exact: he didn't implant i",
+      "context": "Mature",
+      "tags": [
+        "vistas"
+      ],
+      "createdAt": 1773187200000
+    },
+    {
+      "id": "fn-the-residual-why-the-next-civilization-will-b",
+      "type": "artifact",
+      "title": "The Residual: Why the Next Civilization Will Be Built on Networks of Judgment",
+      "content": "We tell the story of progress through individuals — Galileo, Newton, Einstein. But civilizations don't advance because of isolated geniuses. They advance when humans invent new ways of thinking together.\n\nThe Axial Age (800–200 BCE) was not just about Socrates and Confucius. It was about the invention of epistemic networks — communities of inquiry where ideas were debated, challenged, and refined rather than simply inherited.\n\nThe Enlightenment's Royal Society introduced something equally revolu",
+      "context": "Mature",
+      "tags": [
+        "foundational"
+      ],
+      "createdAt": 1773446400000
+    },
+    {
+      "id": "fn-everyone-will-have-jarvis-not-everyone-is-ton",
+      "type": "artifact",
+      "title": "Everyone Will Have Jarvis. Not Everyone Is Tony Stark.",
+      "content": "Iron Man (2008) is the right frame for the AI moment: everyone is about to have Jarvis. The question the film never asked — and the question we're not asking now — is who is on the other end of the conversation.\n\nThe Hitchhiker's Guide to the Galaxy provides the deeper frame: the supercomputer Deep Thought spent 7.5 million years computing the answer to life, the universe, and everything, and produced '42.' The problem wasn't the answer. It was that no one knew what the question was.\n\nBrendan Mc",
+      "context": "Mature",
+      "tags": [
+        "vistas"
+      ],
+      "createdAt": 1773360000000
+    },
+    {
+      "id": "fn-the-residual",
+      "type": "artifact",
+      "title": "The Residual",
+      "content": "Civilizational breakthroughs are not primarily driven by technology, capital, or individual genius. They emerge from networks of minds where knowledge compounds through sustained inquiry.\n\nThe Residual = Trust × Attention × Time\n\nTrust enables open exchange and critique. Attention provides the cognitive energy for insight. Time allows knowledge to refine and accumulate. Together they create the compound interest of collective intelligence.\n\nThis pattern repeats across history: the Axial Age, the",
+      "context": "Mature",
+      "tags": [
+        "foundational"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "fn-operationalizing-the-reputation-lessons-workb",
+      "type": "artifact",
+      "title": "Operationalizing the Reputation Lessons — Workbench Feature Spec v0.1",
+      "content": "Workbench Engineering Spec / Reputation Operationalization / V_rel Instrumentation / Coherence Lag Compression",
+      "context": "🔥 High · Active",
+      "tags": [
+        "protocol",
+        "analytical",
+        "convergence"
+      ],
+      "createdAt": 1778025600000
+    },
+    {
+      "id": "fn-the-inspiration-network-as-recovered-wisdom-i",
+      "type": "artifact",
+      "title": "The Inspiration Network as Recovered Wisdom Infrastructure",
+      "content": "Inspiration Network as wisdom-tradition primitive — re-derivation, not invention",
+      "context": "🔥 High · Active",
+      "tags": [
+        "inspiration-net",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1777680000000
+    },
+    {
+      "id": "fn-the-amuse-bouche-workbench-as-downloadable-fr",
+      "type": "artifact",
+      "title": "The Amuse-Bouche — Workbench as Downloadable Free Tier",
+      "content": "Compress the Workbench's underlying philosophy + semantics + methodology into a downloadable agent skill file. The user runs it and gets a small, clear output that conveys the potential of the full system. Not the whole thing — just enough taste that someone understands what working in the full system would feel like.",
+      "context": "🔥 High · Active",
+      "tags": [
+        "tokens",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1776902400000
+    },
+    {
+      "id": "fn-myst-transition-anthony-meets-brett",
+      "type": "artifact",
+      "title": "MYST Transition — Anthony Meets Brett",
+      "content": "Professional dev shop posture for the MYST build. Infrastructure-as-code, MSA-ready, flexible maintenance staffing with transparent billing, client-owned IP built into the contract from day one.",
+      "context": "🔥 High · Active",
+      "tags": [
+        "feature",
+        "analytical",
+        "convergence"
+      ],
+      "createdAt": 1776816000000
+    },
+    {
+      "id": "fn-claudio-as-second-node-a-framework-that-can-u",
+      "type": "artifact",
+      "title": "Claudio as Second Node — A Framework That Can Unfold Into Quality Time",
+      "content": "Recognition and remuneration as separate primitives. Claudio's existing platform as a framework that can unfold into Quality Time rather than a blank-slate build. The Workbench going relational now has its architectural partner.",
+      "context": "🔥 High · Active",
+      "tags": [
+        "foundational",
+        "integrated",
+        "convergence"
+      ],
+      "createdAt": 1776729600000
+    },
+    {
+      "id": "fn-myst-transition-claudio-meets-brett",
+      "type": "artifact",
+      "title": "MYST Transition — Claudio Meets Brett",
+      "content": "First external pitch of Claudio's modular platform architecture to Brett as a Paul replacement. Recipe-manager metaphor for configurable agents, version control, human-in-the-loop, compliance-embedded from the start.",
+      "context": "🔥 High · Active",
+      "tags": [
+        "feature",
+        "analytical",
+        "convergence"
+      ],
+      "createdAt": 1776816000000
+    },
+    {
+      "id": "fn-vision-as-a-structurally-distinct-contributio",
+      "type": "artifact",
+      "title": "Vision as a Structurally Distinct Contribution Type — and the Missing Economic Mechanism",
+      "content": "## The Standing Design Constraint\n\nEvan is a vision person. He is also the first user of the architecture he is building. If his own vision contributions cannot get attributed back to him through the system he is designing, the system is not actually solving the problem it claims to solve. This is the personal PMF test in its sharpest form, and it now becomes a standing design constraint on all architecture work going forward. Every layer of the Vistas → Inspiration Network → Tokens → Knowledge ",
+      "context": "🔥 High · Active",
+      "tags": [
+        "tokens",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1776556800000
+    },
+    {
+      "id": "fn-knowledge-graph-as-native-substrate-for-attri",
+      "type": "artifact",
+      "title": "Knowledge Graph as Native Substrate for Attribution Tokens",
+      "content": "## The Core Insight\n\nIf a second brain or Workbench is built on knowledge graph architecture, attribution token design stops being a separate problem to solve and becomes a derivative of the graph itself.\n\nA knowledge graph is, structurally, exactly the lineage and provenance substrate that attribution requires. Nodes are contributions and contributors. Edges are relations of derivation — built on, inspired by, synthesized from, engaged with. Properties carry timestamps, confidence, regime, cont",
+      "context": "🔥 High · Active",
+      "tags": [
+        "tokens",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1776556800000
+    },
+    {
+      "id": "fn-vistas-as-scale-invariant-primitive-scalar-ve",
+      "type": "artifact",
+      "title": "Vistas as Scale-Invariant Primitive — Scalar, Vector, Matrix, Tensor",
+      "content": "## The Mathematical Analogy\n\nIn linear algebra, the same primitive (a number) appears at every dimensional scale: as a scalar (one number), a vector (a one-dimensional array of numbers), a matrix (a two-dimensional array), a tensor (any higher dimension). The primitive does not change. What changes is the dimensional structure of how primitives relate to each other, and what new properties become possible only at the higher dimension.\n\nVistas work the same way. The primitive is coherent self-kno",
+      "context": "🔥 High · Active",
+      "tags": [
+        "vistas",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1776556800000
+    },
+    {
+      "id": "fn-brett-s-signal-network-the-lived-test-case-fo",
+      "type": "artifact",
+      "title": "Brett's Signal Network — The Lived Test Case for Vistas → Inspiration Network → Tokens",
+      "content": "## The Situation\n\nBrett (Evan's brother, MYST partner) is actively converting MYST's professional network into structured market signals that can be sold to quant funds. The mechanism: each MYST customer (institutional PMs, analysts, allocators) carries their own genetic framework of P&L — a particular cognitive signature, conviction style, track record, and pattern of being right or wrong about specific kinds of regimes. Their predictions and insights enter the MYST network system. The network ",
+      "context": "🔥 High · Active",
+      "tags": [
+        "tokens",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1776556800000
+    },
+    {
+      "id": "fn-tokens-as-loop-closure-the-g-del-answer-at-th",
+      "type": "artifact",
+      "title": "Tokens as Loop Closure — The Gödel Answer at the Network Level, and Coherence Lag as Finance's Native Form",
+      "content": "## The Architectural Arrival\n\nThe three macro-primitives — Vistas, Inspiration Network, Knowledge Tokens — finally hang together as a single structural answer to the Gödel problem at the network level.\n\nVistas are closed-system coherence at the individual node. Each person as a coherent inner system. Necessary but, by Gödel, not self-validating.\n\nInspiration Network is relational coherence between nodes. Witnessed lineage, edges, the braid of conviction strands maintaining identity through entan",
+      "context": "🔥 High · Active",
+      "tags": [
+        "tokens",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1776556800000
+    },
+    {
+      "id": "fn-the-moral-core-out-of-hiding-the-all-day-essa",
+      "type": "artifact",
+      "title": "The Moral Core, Out of Hiding: The All-Day Essay Arc",
+      "content": "The day produced two essays that together express two halves of one thesis.\n\nEssay 1 — 'A New Expression' (~2,500 words): The generous case. Voice-finding at scale as democratization of expression. Photography / printing press as lineage of similar threshold expansions. Mediation that was already there (algorithms + century of marketing = voice-shaped extraction). Voice-as-discovery vs voice-as-extraction as the real distinction. Provenance and embodiment as the new scarce signals in a world whe",
+      "context": "🔥 High · Active",
+      "tags": [
+        "foundational",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1776470400000
+    },
+    {
+      "id": "fn-weekly-review-april-11-17-2026",
+      "type": "artifact",
+      "title": "Weekly Review — April 11–17, 2026",
+      "content": "Weekly Workbench sweep — moves, arrivals, open items, patterns",
+      "context": "🔥 High · Active",
+      "tags": [
+        "foundational",
+        "integrated",
+        "convergence"
+      ],
+      "createdAt": 1776384000000
+    },
+    {
+      "id": "fn-pattern-recognition-as-cross-disciplinary-tra",
+      "type": "artifact",
+      "title": "Pattern-Recognition as Cross-Disciplinary Translator — Zendahl / Durrant / Silverman Trijam",
+      "content": "Three people arrived at the same structural insight from three different starting points: disciplinary silos each develop their own dialect, but beneath the dialects are fractal-like patterns of organization that do translate across — once you have the right translator-units. Gen's Lexems (translational units that sit between disciplines, framed alongside Bazarab Nicolescu's transdisciplinarity and metamodernism). Daniel's Six Elements / Wu Jing framework (air, water, fire, wood, metal, earth as",
+      "context": "🔥 High · Active",
+      "tags": [
+        "inspiration-net",
+        "integrated",
+        "convergence"
+      ],
+      "createdAt": 1776124800000
+    },
+    {
+      "id": "fn-collaborator-session-paul-dlug-april-9-2025-c",
+      "type": "artifact",
+      "title": "Collaborator Session — Paul Dlug / April 9 2025 / Civilizational Weight, Publishable Knowledge Graphs, Negative Value",
+      "content": "Publishable knowledge graphs; distributed cap table (token inflation / zombie problem); negative value contributions; philosophical debt bridge crossing; civilizational coherence lag; semantic arbitration; publish-and-connect as viral onboarding; coherence substrate vs. brand lenses",
+      "context": "🔥 High · Active",
+      "tags": [
+        "inspiration-net",
+        "integrated",
+        "convergence"
+      ],
+      "createdAt": 1744156800000
+    },
+    {
+      "id": "fn-naming-the-network-makes-it-real-ontology-the",
+      "type": "artifact",
+      "title": "Naming the Network Makes It Real — Ontology, the Residual, and the Abundance It Reveals",
+      "content": "Classical ontology cataloged things and left the network unnamed. Not because the network wasn't there — it was doing all the generative work the entire time. Trust, inspiration, intellectual lineage, the relationship that made collaboration possible. All running. None with an address.\n\nInvisible things can't be questioned, measured, attributed, or circulated economically — so they appear as scarcity while generating enormous surplus.\n\nThe Residual is the shadow this unnamed network casts on eco",
+      "context": "🔥 High · Active",
+      "tags": [
+        "inspiration-net",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1776038400000
+    },
+    {
+      "id": "fn-scarcity-to-abundance-the-economic-consequenc",
+      "type": "artifact",
+      "title": "Scarcity to Abundance — The Economic Consequence of the Syntax Flip",
+      "content": "The syntax flip that runs through all of this morning's work — from object-primary to relational-primary ontology — has an economic consequence that arrived in meditation.\n\nStandard economics takes scarcity as its foundational premise. There is not enough. Resources are finite. The problem of economics is allocation: how to distribute what exists. This premise generates a particular geometry: lines. Value flows from point A to point B. What A gives, B receives. The total is fixed. The system is ",
+      "context": "🔥 High · Active",
+      "tags": [
+        "foundational",
+        "contemplative",
+        "eureka"
+      ],
+      "createdAt": 1776038400000
+    },
+    {
+      "id": "fn-inspiration-notes-workbench-nodes-the-same-ex",
+      "type": "artifact",
+      "title": "Inspiration Notes → Workbench Nodes: The Same Experiment, A Year Apart",
+      "content": "## The Through-Line\n\nIn April 2025, the Inspiration Network microsite test posed this question: Could you get 10 people to each write 3 inspiration notes — to people from their past who shaped them — and from that, see whether an organic network of resonance, alignment, and trust would form?\n\nIn April 2026, in conversation about scaling the Workbench from a social network of one to a social network of ten, the question reformed: If 10 people each built their own Workbench (Karpathy-style second ",
+      "context": "🔥 High · Active",
+      "tags": [
+        "inspiration-net",
+        "integrated",
+        "convergence"
+      ],
+      "createdAt": 1776038400000
+    },
+    {
+      "id": "fn-the-system-dreaming-itself-autopoiesis-the-li",
+      "type": "artifact",
+      "title": "The System Dreaming Itself — Autopoiesis, the Living Equation, and Universal Law",
+      "content": "The dream gave the phenomenology of the system — not a description of it from outside, but what it feels like to be inside it when it is running. Recursive processing, deepening, and convergence toward something with motion. This is qualitatively different from all prior descriptions, which approached the system analytically or architecturally.\n\nThe key phenomenological detail: it was not a library being organized. It was alive. It was producing more of itself from within itself. This is autopoi",
+      "context": "🔥 High · Active",
+      "tags": [
+        "foundational",
+        "contemplative",
+        "eureka"
+      ],
+      "createdAt": 1776038400000
+    },
+    {
+      "id": "fn-the-crystallization-mission-and-business-as-o",
+      "type": "artifact",
+      "title": "The Crystallization — Mission and Business as One Recursive Loop",
+      "content": "Recursive Compounding / Attribution Infrastructure / Mission-Business Convergence",
+      "context": "🔥 High · Active",
+      "tags": [
+        "foundational",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1775952000000
+    },
+    {
+      "id": "fn-the-missing-layer-the-case-for-attribution-in",
+      "type": "artifact",
+      "title": "The Missing Layer — The Case for Attribution Infrastructure as Co-Creation Unlock",
+      "content": "For most of history, knowledge compounded inside institutions. The institution was the container that made accumulation possible — the price was partial surrender of sovereignty. That deal is now decoupling. The personal knowledge layer is becoming real infrastructure (Karpathy, April 2026). A single person can now maintain a structured, growing, queryable representation of their thinking without an institution to hold it.\n\nBut every person who builds one of these systems gets a powerful island.",
+      "context": "🔥 High · Active",
+      "tags": [
+        "inspiration-net",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1775952000000
+    },
+    {
+      "id": "fn-attribution-network-hypothesis-set-h1-h14",
+      "type": "artifact",
+      "title": "Attribution Network Hypothesis Set — H1–H14",
+      "content": "Social physics of recognition, gratitude as economic primitive, distributed attribution networks",
+      "context": "🔥 High · Active",
+      "tags": [
+        "inspiration-net",
+        "analytical",
+        "convergence"
+      ],
+      "createdAt": 1735689600000
+    },
+    {
+      "id": "fn-productive-friction-in-a-personal-knowledge-e",
+      "type": "artifact",
+      "title": "Productive Friction in a Personal Knowledge Ecology",
+      "content": "Productive friction — the distinction between dead friction (waste) and living friction (formative resistance). Which frictions are sacred? Remove friction from capture; add friction to interpretation, connection, and periodic pruning.",
+      "context": "🔥 High · Active",
+      "tags": [
+        "foundational",
+        "integrated",
+        "convergence"
+      ],
+      "createdAt": 1775606400000
+    },
+    {
+      "id": "fn-working-school-of-thought-the-collaboration-a",
+      "type": "artifact",
+      "title": "Working School of Thought — The Collaboration Arc",
+      "content": "Two threads converged today to produce this recognition.\n\nThread 1: The Future HOW seminar has been experiencing friction. Three participants left, citing information overload. The remaining group contains people who all mean well but are each living inside their own deep purpose and vision of what this moment calls for. The friction is not hostile — it is the friction of individual depth without shared infrastructure for making that depth legible to each other.\n\nThis is the sutra-gloss problem ",
+      "context": "🔥 High · Active",
+      "tags": [
+        "inspiration-net",
+        "integrated",
+        "convergence"
+      ],
+      "createdAt": 1775433600000
+    },
+    {
+      "id": "fn-the-sutra-gloss-structure-knowledge-as-living",
+      "type": "artifact",
+      "title": "The Sutra-Gloss Structure — Knowledge as Living Thread",
+      "content": "A sutra (literally 'thread') is a form of maximally compressed ancient Indian writing designed to be almost unintelligible without help. Not because it is mystical, but because the full meaning is only accessible from inside a certain understanding — and understanding cannot be transmitted directly, only pointed at. The sutra is the minimum structure needed to regenerate the full meaning, given the right conditions. It is not the content; it is the algorithm that produces content when run in the",
+      "context": "🔥 High · Active",
+      "tags": [
+        "inspiration-net",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1775433600000
+    },
+    {
+      "id": "fn-entering-the-braid-pedagogy-must-match-ontolo",
+      "type": "artifact",
+      "title": "Entering the Braid — Pedagogy Must Match Ontology",
+      "content": "THE BRAID AND THE TRANSFORMER\n\nThe braid geometry says: two strands maintain distinct identity. The crossings are where the intelligence lives. The sequence of pairings at those crossings encodes everything. DNA chose this architecture for the same reason — ATCG, four primitives, structured crossings, infinite complexity from minimal alphabet.\n\nThe Ackoff Arms Race insight says: the transformer is a denominator-finding machine. Its primary operation is relational synthesis — everything in relati",
+      "context": "🔥 High · Active",
+      "tags": [
+        "foundational",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1775347200000
+    },
+    {
+      "id": "fn-the-extrinsic-to-intrinsic-flip-first-person-",
+      "type": "artifact",
+      "title": "The Extrinsic-to-Intrinsic Flip — First Person Account",
+      "content": "The transition from extrinsic to intrinsic motivation as a lived experience — and its implications for who Quality Time is built for and why",
+      "context": "🔥 High · Active",
+      "tags": [
+        "foundational",
+        "integrated",
+        "convergence"
+      ],
+      "createdAt": 1775347200000
+    },
+    {
+      "id": "fn-the-workbench-as-educational-journey-spiral-d",
+      "type": "artifact",
+      "title": "The Workbench as Educational Journey — Spiral, Discrimination, Perception",
+      "content": "Four Kairos education documents traced in sequence:\n\n— November 2024 (Manifesto): Declaration energy. Learn by building together. Every contributor both student and teacher. Reform language, still inside the existing frame.\n\n— December 2024 (Tokenizing Collective Intelligence): Economic mechanism arrives. Contribution creates ownership. Network effects distributed rather than captured. Wisdom layers named for the first time — guides and wisdom keepers receiving unique incentives.\n\n— December 202",
+      "context": "🔥 High · Active",
+      "tags": [
+        "foundational",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1775347200000
+    },
+    {
+      "id": "fn-the-ackoff-arms-race-part-3-the-war-for-under",
+      "type": "artifact",
+      "title": "The Ackoff Arms Race Part 3 — The War for Understanding",
+      "content": "The war over understanding is not being fought at the bottom of Ackoff's ladder. We have data, information, and machine-synthesized knowledge in abundance. What is receding is understanding — the appreciation of WHY — and wisdom, which Ackoff called the only permanent endowment of the race. The arms race is an efficiency race. Wisdom is about effectiveness. We are winning the race we built and losing the one that counts. The transformer — named for what it does — is a denominator-finding machine",
+      "context": "🔥 High · Active",
+      "tags": [
+        "inspiration-net",
+        "integrated",
+        "eureka"
+      ],
+      "createdAt": 1775260800000
+    },
+    {
+      "id": "iq-what-does-trik-lad-i-offer-to-the-kairos-conc",
+      "type": "idea",
+      "title": "What does trikāladṛṣṭi offer to the Kairos conception of time?",
+      "content": "Sharpens the Kairos/qualitative time distinction. The Supermind as a mind that knows itself as time is a generative frame for the Vista concept.",
+      "context": "inquiry · Open",
+      "tags": [
+        "inquiry",
+        "open"
+      ],
+      "createdAt": 1778284800000
+    },
+    {
+      "id": "iq-what-does-river-s-dissatisfaction-with-substa",
+      "type": "idea",
+      "title": "What does River's dissatisfaction with Substack reveal about form vs. content in distributed thinking?",
+      "content": "Platform as container — when the form becomes the constraint. Resonant with Workbench form-finding and the Mettaverse insight.",
+      "context": "inquiry · Open",
+      "tags": [
+        "inquiry",
+        "open"
+      ],
+      "createdAt": 1778284800000
+    },
+    {
+      "id": "iq-how-does-the-nac-pitch-connect-to-the-recursi",
+      "type": "idea",
+      "title": "How does the NAC pitch connect to the Recursive Business Model?",
+      "content": "NAC is an early instance of the recursive model at the physical/community level. Making it explicit strengthens both.",
+      "context": "inquiry · Open",
+      "tags": [
+        "inquiry",
+        "open"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "iq-what-is-the-right-first-audience-for-coherenc",
+      "type": "idea",
+      "title": "What is the right first audience for Coherence as Capital?",
+      "content": "Audience determines framing — investors vs collaborators vs academics each need different entry points.",
+      "context": "inquiry · Open",
+      "tags": [
+        "inquiry",
+        "open"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "iq-what-is-the-minimum-viable-trust-density-requ",
+      "type": "idea",
+      "title": "What is the minimum viable trust density required for the Residual to tip?",
+      "content": "Without this, the Inspiration Network has no success metric beyond 'more connections.'",
+      "context": "inquiry · Open",
+      "tags": [
+        "inquiry",
+        "open"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "iq-what-is-the-seminar-design-for-the-inner-cohe",
+      "type": "idea",
+      "title": "What is the seminar design for the Inner Coherence vs External Validation course?",
+      "content": "Near-term executable — Socratic format on inner coherence. Wright Brothers and Galileo as anchoring cases.",
+      "context": "inquiry · Deepening",
+      "tags": [
+        "inquiry",
+        "deepening"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "iq-when-does-subscription-pricing-cross-from-neu",
+      "type": "idea",
+      "title": "When does subscription pricing cross from neutral into extractive for Kairos?",
+      "content": "Without defining the line, drift is inevitable. The ethical alignment lens classifies some subscriptions as potentially corrosive.",
+      "context": "inquiry · Open",
+      "tags": [
+        "inquiry",
+        "open"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "iq-how-does-the-infinite-business-model-fail",
+      "type": "idea",
+      "title": "How does the Infinite Business Model fail?",
+      "content": "Every regenerative system has failure modes. Naming them makes the architecture more robust and credible.",
+      "context": "inquiry · Open",
+      "tags": [
+        "inquiry",
+        "open"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "iq-what-is-the-missing-bridge-document-between-t",
+      "type": "idea",
+      "title": "What is the missing bridge document between The Residual and the Inspiration Network?",
+      "content": "These are the two most important concepts in the corpus and have never been formally connected in one piece.",
+      "context": "inquiry · Ready to Compress",
+      "tags": [
+        "inquiry",
+        "ready-to-compre"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "iq-what-does-the-g-del-tension-mean-practically-",
+      "type": "idea",
+      "title": "What does the Gödel Tension mean practically for AI product design?",
+      "content": "Deepest intellectual foundation of the Kairos thesis but lives at the philosophical level. Needs translation into product design constraints.",
+      "context": "inquiry · Open",
+      "tags": [
+        "inquiry",
+        "open"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "iq-should-the-socrates-essay-and-the-tony-stark-",
+      "type": "idea",
+      "title": "Should the Socrates essay and the Tony Stark essay be published as a series or stand alone?",
+      "content": "Companion pieces — same thesis from different angles. Published together they reinforce each other.",
+      "context": "inquiry · Open",
+      "tags": [
+        "inquiry",
+        "open"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "iq-how-does-the-workbench-scale-from-one-user-to",
+      "type": "idea",
+      "title": "How does the Workbench scale from one user to a small group?",
+      "content": "Architecture is designed for network effects but built for one. What changes structurally when George, Daniel, Cassandra are added?",
+      "context": "inquiry · Open",
+      "tags": [
+        "inquiry",
+        "open"
+      ],
+      "createdAt": 1773619200000
+    },
+    {
+      "id": "ext-david-deutsch",
+      "type": "person",
+      "title": "David Deutsch",
+      "content": "The Beginning of Infinity — unbounded knowledge growth through error correction.",
+      "context": "external",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    },
+    {
+      "id": "ext-robert-solow",
+      "type": "person",
+      "title": "Robert Solow",
+      "content": "Total Factor Productivity (1957) — named the gap between measurable inputs and productivity growth.",
+      "context": "external",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    },
+    {
+      "id": "ext-shinzen-young",
+      "type": "person",
+      "title": "Shinzen Young",
+      "content": "The Science of Enlightenment — first contemplative teacher encountered. Predicted Maitreya as a collective.",
+      "context": "external",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    },
+    {
+      "id": "ext-charles-eisenstein",
+      "type": "person",
+      "title": "Charles Eisenstein",
+      "content": "The Mirror Principle — what we do to the other we do to ourselves. Structural confirmation of the Syntax Shift.",
+      "context": "external",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    },
+    {
+      "id": "ext-ruben-laukkonen",
+      "type": "person",
+      "title": "Ruben Laukkonen",
+      "content": "Hacking Emergence — physics of self-organized criticality as proof of the Coherence as Capital thesis.",
+      "context": "external",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    },
+    {
+      "id": "ext-gordon-brander",
+      "type": "person",
+      "title": "Gordon Brander",
+      "content": "The shape of network society — McLuhan-absolutist typology naming pathologies of the unwitnessed network.",
+      "context": "external",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    },
+    {
+      "id": "ext-vanessa-andreotti",
+      "type": "person",
+      "title": "Vanessa Andreotti",
+      "content": "Meta-Relationality framework — being in relationship with the relationship itself.",
+      "context": "external",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    },
+    {
+      "id": "ext-jhana-meditation-practice",
+      "type": "moment",
+      "title": "Jhana meditation practice",
+      "content": "Contemplative practice since 2020. Provided direct perceptual access to states of inner coherence that grounded the VISTAs architecture.",
+      "context": "life-experience",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    },
+    {
+      "id": "ext-covid-awakening-2020",
+      "type": "moment",
+      "title": "COVID awakening (2020)",
+      "content": "Awakening experience of oneness and interconnection. Seeded the generative substrate thesis and the root transmission: be a light in the darkness.",
+      "context": "life-experience",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    },
+    {
+      "id": "ext-hedge-fund-trading-career",
+      "type": "moment",
+      "title": "Hedge fund trading career",
+      "content": "7+ years as a hedge fund trader gave direct perceptual access to what price does and does not capture.",
+      "context": "life-experience",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    },
+    {
+      "id": "ext-lineages-in-objects-thanksgiving-2025",
+      "type": "moment",
+      "title": "Lineages in objects (Thanksgiving 2025)",
+      "content": "Foundational perceptual experience: every made thing carries the invisible chain of knowledge, trust, and effort that produced it. Root seed of the Inspiration Network.",
+      "context": "life-experience",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    },
+    {
+      "id": "ext-kairos-ip-and-founding-work",
+      "type": "artifact",
+      "title": "Kairos IP and founding work",
+      "content": "Philosophical foundation, macro primitives (Vistas, Inspiration Network, Tokens), coordination architecture. The generative substrate from which Quality Time grows.",
+      "context": "internal",
+      "tags": [
+        "external",
+        "source"
+      ],
+      "createdAt": 1778610889998
+    }
+  ],
+  "edges": [
+    {
+      "id": "in-e1",
+      "from": "collab-gen-zendahl",
+      "to": "mca-quality-time",
+      "type": "STRUCTURAL_INFLUENCE",
+      "createdAt": 1775433600000,
+      "note": "Gen's meta-enquiry named two irreconcilable cosmological orientations. Evan's framing is closer to Schumacher: AI as substrate serving human flourishing, not as the arc of evolution."
+    },
+    {
+      "id": "in-e2",
+      "from": "collab-gen-zendahl",
+      "to": "mca-inspiration-network",
+      "type": "ACTIVATING_RESONANCE",
+      "createdAt": 1774915200000,
+      "note": "Gen's minimal axiom set (W=U·T·C·S) is the most formal expression in the Future HOW archive of what Quality Time is trying to operationalise. 'No R → no U' maps onto the Inspiration Network's core premise."
+    },
+    {
+      "id": "in-e3",
+      "from": "ext-vanessa-andreotti",
+      "to": "mca-quality-time",
+      "type": "STRUCTURAL_INFLUENCE",
+      "createdAt": 1774224000000,
+      "note": "Meta-relationality as 'being in relationship with the relationship itself' maps directly onto the Quality Time session as relational object."
+    },
+    {
+      "id": "in-e4",
+      "from": "ext-vanessa-andreotti",
+      "to": "mca-coherence-as-capital",
+      "type": "ACTIVATING_RESONANCE",
+      "createdAt": 1776729600000,
+      "note": "Working at the level of assumptions about reality rather than instructions maps directly onto the Workbench OS logic."
+    },
+    {
+      "id": "in-e5",
+      "from": "collab-george-por",
+      "to": "mca-quality-time",
+      "type": "STRUCTURAL_INFLUENCE",
+      "createdAt": 1778457600000,
+      "note": "Developmental Friendship framework makes explicit what the Workbench was already enacting implicitly. The 'mutual developmental holding environment' is structurally identical to what the Workbench creates at personal scale."
+    },
+    {
+      "id": "in-e6",
+      "from": "collab-paul-dlug",
+      "to": "mca-quality-time",
+      "type": "CONCEPTUAL_DEBT",
+      "createdAt": 1768262400000,
+      "note": "Paul's multi-dimensional reputation scoring: accuracy of insight, timing accuracy, discussion quality, insight-spotting. Reputation is a vector, not a scalar."
+    },
+    {
+      "id": "in-e7",
+      "from": "collab-paul-dlug",
+      "to": "mca-coherence-as-capital",
+      "type": "CONCEPTUAL_DEBT",
+      "createdAt": 1774396800000,
+      "note": "Coase Inversion Challenge — AI agents have collective intelligence without coordination overhead. Every new feature must specify what makes participation strictly more rewarding than extraction. The standing intellectual debt."
+    },
+    {
+      "id": "in-e8",
+      "from": "collab-natasha-gauthier",
+      "to": "mca-quality-time",
+      "type": "BRIDGE_SYNTHESIS",
+      "createdAt": 1775001600000,
+      "note": "The monks image as marketing philosophy: wisdom moves at a different sound, the world pulls rather than being pushed."
+    },
+    {
+      "id": "in-e9",
+      "from": "collab-natasha-gauthier",
+      "to": "fn-the-residual",
+      "type": "ACTIVATING_RESONANCE",
+      "createdAt": 1775001600000,
+      "note": "'Beyond False Wisdom' — named from inside enterprise AI at scale. AI produces a simulacrum of wisdom that isn't the real thing. This is the practitioner's articulation of what Quality Time fills."
+    },
+    {
+      "id": "in-e10",
+      "from": "collab-klaus-mager",
+      "to": "mca-coherence-as-capital",
+      "type": "ACTIVATING_RESONANCE",
+      "createdAt": 1774224000000,
+      "note": "Peer resonance within Future HOW. Klaus and Evan are co-nodes vibrating at the same frequencies — Coherence as Capital, The Residual, cross-scale coordination."
+    },
+    {
+      "id": "in-e11",
+      "from": "ext-gordon-brander",
+      "to": "mca-inspiration-network",
+      "type": "EXTERNAL_THINKER",
+      "createdAt": 1776384000000,
+      "note": "Brander's unwitnessed-network diagnostic names exactly what the Inspiration Network is designed to remediate: algorithms for coordination, memes for memory, attention as currency."
+    },
+    {
+      "id": "in-e12",
+      "from": "ext-charles-eisenstein",
+      "to": "mca-great-syntax-shift",
+      "type": "ACTIVATING_RESONANCE",
+      "createdAt": 1774483200000,
+      "note": "The Mirror Principle (what we do to the other we do to ourselves) is the ethical face of what Laukkonen calls criticality and Evan calls coherence."
+    },
+    {
+      "id": "in-e13",
+      "from": "ext-ruben-laukkonen",
+      "to": "mca-coherence-as-capital",
+      "type": "BRIDGE_SYNTHESIS",
+      "createdAt": 1774483200000,
+      "note": "Physics of self-organized criticality as proof: alignment and peak intelligence converge. Misaligned superintelligence is a contradiction in terms. Direct physics-grounded proof of the Coherence as Capital thesis."
+    },
+    {
+      "id": "in-e14",
+      "from": "ext-kairos-ip-and-founding-work",
+      "to": "mca-quality-time",
+      "type": "INTERNAL_LINEAGE",
+      "createdAt": 1773619200000,
+      "note": "Kairos is the why and the what: the structural invariants, the primitive architecture, the philosophical claim about how collective intelligence works. Quality Time is the how and the where."
+    },
+    {
+      "id": "in-e15",
+      "from": "ext-jhana-meditation-practice",
+      "to": "mca-coherence-as-capital",
+      "type": "LIFE_EXPERIENCE",
+      "createdAt": 1773619200000,
+      "note": "The jhana practice provided direct perceptual access to states of inner coherence — not as concept but as lived experience. This grounded the VISTAs architecture."
+    },
+    {
+      "id": "in-e16",
+      "from": "ext-covid-awakening-2020",
+      "to": "fn-the-residual",
+      "type": "LIFE_EXPERIENCE",
+      "createdAt": 1773619200000,
+      "note": "The awakening experience of oneness preceded and motivated the generative substrate thesis: there is an unmeasured commons that makes all value creation possible."
+    },
+    {
+      "id": "in-e17",
+      "from": "ext-hedge-fund-trading-career",
+      "to": "mca-price-as-lossy-compression",
+      "type": "LIFE_EXPERIENCE",
+      "createdAt": 1773619200000,
+      "note": "7+ years watching meaning get stripped out every time a position closed. Price coordinates behavior by erasing context — efficient for transactions, destructive for knowledge networks."
+    },
+    {
+      "id": "in-e18",
+      "from": "ext-lineages-in-objects-thanksgiving-2025",
+      "to": "mca-inspiration-network",
+      "type": "LIFE_EXPERIENCE",
+      "createdAt": 1773619200000,
+      "note": "The root experience that motivated the entire Inspiration Network architecture. Every made thing carries the invisible chain of knowledge, trust, and effort that produced it."
+    },
+    {
+      "id": "in-e19",
+      "from": "ext-david-deutsch",
+      "to": "fn-the-residual",
+      "type": "STRUCTURAL_INFLUENCE",
+      "createdAt": 1773619200000,
+      "note": "The Beginning of Infinity: the Scientific Revolution created an unbounded feedback loop for knowledge growth through open criticism and error correction. This became the structural anchor for why error-correction networks are the real engine of progress."
+    },
+    {
+      "id": "in-e20",
+      "from": "ext-robert-solow",
+      "to": "fn-the-residual",
+      "type": "STRUCTURAL_INFLUENCE",
+      "createdAt": 1773619200000,
+      "note": "Solow named the gap — productivity growth unexplained by capital and labor — as 'a measure of our ignorance.' This became the economic grounding for the Residual framework."
+    },
+    {
+      "id": "struct-e21",
+      "from": "n-evan",
+      "to": "fn-the-residual",
+      "type": "CREATED_BY",
+      "createdAt": 1778610889999
+    },
+    {
+      "id": "struct-e22",
+      "from": "n-evan",
+      "to": "mca-inspiration-network",
+      "type": "CREATED_BY",
+      "createdAt": 1778610889999
+    },
+    {
+      "id": "struct-e23",
+      "from": "n-evan",
+      "to": "mca-quality-time",
+      "type": "CREATED_BY",
+      "createdAt": 1778610889999
+    },
+    {
+      "id": "struct-e24",
+      "from": "n-evan",
+      "to": "mca-coherence-as-capital",
+      "type": "CREATED_BY",
+      "createdAt": 1778610889999
+    },
+    {
+      "id": "struct-e25",
+      "from": "n-evan",
+      "to": "mca-great-syntax-shift",
+      "type": "CREATED_BY",
+      "createdAt": 1778610889999
+    },
+    {
+      "id": "struct-e26",
+      "from": "n-evan",
+      "to": "mca-g-del-tension",
+      "type": "CREATED_BY",
+      "createdAt": 1778610889999
+    },
+    {
+      "id": "struct-e27",
+      "from": "n-evan",
+      "to": "mca-vista",
+      "type": "CREATED_BY",
+      "createdAt": 1778610889999
+    },
+    {
+      "id": "claudio-28",
+      "from": "collab-claudio-souza",
+      "to": "fn-claudio-as-second-node-a-framework-that-can-u",
+      "type": "PARTICIPATED_IN",
+      "createdAt": 1778610889999
+    },
+    {
+      "id": "claudio-29",
+      "from": "collab-claudio-souza",
+      "to": "fn-myst-transition-claudio-meets-brett",
+      "type": "PARTICIPATED_IN",
+      "createdAt": 1778610889999
+    }
+  ],
+  "activeSession": {
+    "startedAt": 1778610889999,
+    "liveThreads": [
+      "V_rel = Quality Time",
+      "Coherence as Capital",
+      "The Residual",
+      "Inspiration Network",
+      "Gödel Tension"
+    ]
+  }
+}
