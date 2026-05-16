@@ -5,6 +5,7 @@ import TerrainMap     from './components/InspirationNetwork'
 import Capture        from './components/MintToken'
 import QueryPanel     from './components/QueryPanel'
 import ProtocolRunner from './components/ProtocolRunner'
+import AxiomLab       from './components/AxiomLab'
 
 const NAV = [
   { id: 'dashboard', icon: '◈', label: 'Dashboard'  },
@@ -12,6 +13,7 @@ const NAV = [
   { id: 'capture',   icon: '◎', label: 'Capture'    },
   { id: 'query',     icon: '◐', label: 'Query'      },
   { id: 'protocols', icon: '⚡', label: 'Protocols'  },
+  { id: 'axioms',    icon: '✦', label: 'Axioms'     },
 ]
 
 export default function App() {
@@ -88,6 +90,9 @@ export default function App() {
         )}
         {view === 'protocols' && (
           <ProtocolRunner store={store} onProtocolComplete={updateStore} />
+        )}
+        {view === 'axioms' && (
+          <AxiomLab />
         )}
       </main>
     </div>

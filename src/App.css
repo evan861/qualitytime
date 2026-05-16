@@ -465,3 +465,61 @@ select option { background: var(--surface2); }
 .sug-title { flex: 1; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .sug-edge  { font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); background: var(--surface); padding: 1px 6px; border-radius: 3px; flex-shrink: 0; }
 .sug-check { color: var(--green); font-size: 12px; flex-shrink: 0; }
+
+/* ── Axiom Lab ──────────────────────────────────────────────────────────────── */
+.axiom-lab { max-width: 880px; }
+
+.axiom-picker { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 18px; }
+
+.axiom-btn {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 16px;
+  cursor: pointer; text-align: left; color: var(--text-muted);
+  transition: border-color 0.18s, color 0.18s, background 0.18s;
+}
+.axiom-btn:hover { background: var(--surface2); color: var(--text); }
+.axiom-btn.active { background: var(--surface2); }
+.axiom-btn-label     { font-size: 14px; font-weight: 600; letter-spacing: -0.2px; }
+.axiom-btn-parallels { font-size: 11px; color: var(--text-muted); margin-top: 3px; text-transform: lowercase; }
+.axiom-btn.active .axiom-btn-parallels { color: inherit; opacity: 0.7; }
+
+.axiom-statement {
+  display: flex; align-items: baseline; gap: 12px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 12px 16px;
+  margin-bottom: 18px; font-size: 13px; line-height: 1.55;
+  transition: opacity 0.25s;
+}
+.axiom-statement.hidden { opacity: 0; pointer-events: none; }
+.axiom-statement-tag {
+  font-size: 9px; text-transform: uppercase; letter-spacing: 1.2px;
+  color: var(--text-muted); padding: 2px 7px;
+  border: 1px solid var(--border); border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.axiom-canvas-wrap {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 6px; overflow: hidden;
+}
+.axiom-canvas { display: block; }
+.axiom-canvas path { transition: stroke 0.3s; }
+
+.axiom-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.axiom-cell {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 16px;
+}
+.axiom-cell-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+.axiom-cell-value { font-size: 15px; font-weight: 600; letter-spacing: -0.2px; transition: color 0.25s; }
+
+.axiom-toggle { margin-top: 24px; }
+.axiom-toggle label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--text-muted); cursor: pointer;
+}
+.axiom-toggle input { accent-color: var(--accent); }
+.axiom-hint {
+  font-size: 12px; color: var(--text-muted); line-height: 1.55;
+  margin-top: 10px; max-width: 620px; font-style: italic;
+}
