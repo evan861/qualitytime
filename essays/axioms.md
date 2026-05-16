@@ -14,6 +14,8 @@ The oldest traceable ancestor of both words is the Proto-Indo-European *aks-* â€
 
 Hold that image. We'll need it.
 
+![A vertical axis of light running through a dark field of curved geometries and concentric rings â€” the still point around which everything else organizes.](./axioms.png)
+
 **Axis.** Latin for axle, pivot line. In geometry, the reference line from which all positions are measured. It doesn't appear in the data. Everything else is located in relation to it.
 
 **Axle.** The physical version. Iron. Literal. The wheel spins; the axle holds.
