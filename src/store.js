@@ -235,15 +235,17 @@ export function resetStore() {
 
 // ── Mutations ─────────────────────────────────────────────────────────────────
 
-export function addNode({ type, title, content, context, tags, newEdges = [], store }) {
+export function addNode({ type, title, content, context, tags, newEdges = [], store, stage = null }) {
   const id = uuidv4()
+  const now = Date.now()
   const node = {
     id, type,
     title: title.trim(),
     content: content.trim(),
     context: context.trim(),
     tags: tags.map(t => t.trim()).filter(Boolean),
-    createdAt: Date.now(),
+    createdAt: now,
+    ...(stage ? { stage, stageEnteredAt: now } : {}),
   }
   const edgeObjs = newEdges.map(e => ({
     id: uuidv4(),
@@ -405,4 +407,16 @@ export function getSuggestedConnections(type, title, tags, nodes, count = 5) {
     .filter(n => n.score > 0)
     .sort((a, b) => b.score - a.score)
     .slice(0, count)
+}
+
+/** Belt stats: counts per stage, plus unstaged artifact/idea nodes */
+export function getBeltStats(nodes) {
+  const BELT_TYPES = new Set(['artifact', 'idea'])
+  const belt = nodes.filter(n => BELT_TYPES.has(n.type))
+  return {
+    intake:      belt.filter(n => n.stage === 'intake').length,
+    development: belt.filter(n => n.stage === 'development').length,
+    execution:   belt.filter(n => n.stage === 'execution').length,
+    unstaged:    belt.filter(n => !n.stage).length,
+  }
 }

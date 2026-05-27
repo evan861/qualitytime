@@ -424,7 +424,7 @@ function buildAndSave(journeyId, data, store) {
     const newEdges = [...(data.edges || [])]
     if (data.originNodeId) newEdges.push({ nodeId: data.originNodeId, type: 'EMERGED_FROM', dir: 'to' })
     if (data.refinesNodeId) newEdges.push({ nodeId: data.refinesNodeId, type: 'REFINES', dir: 'to' })
-    next = addNode({ type: 'idea', title: data.name || 'New idea', content: data.statement || '', context: data.context || '', tags, newEdges, store: next })
+    next = addNode({ type: 'idea', title: data.name || 'New idea', content: data.statement || '', context: data.context || '', tags, newEdges, store: next, stage: 'intake' })
   }
 
   if (journeyId === 'reflection') {
@@ -433,12 +433,14 @@ function buildAndSave(journeyId, data, store) {
     next = addNode({ type: 'moment', title: data.momentTitle || 'Reflection', content: data.momentContent || '', context: data.context || '', tags, newEdges, store: next })
     if ((data.crystallized || '').trim() && data.fieldNote === 'yes') {
       const momentId = next.nodes[next.nodes.length - 1].id
-      next = addNode({ type: 'artifact', title: `Field Note: ${data.momentTitle || 'Reflection'}`, content: data.crystallized, context: 'field-note', tags, newEdges: [{ nodeId: momentId, type: 'EMERGED_FROM', dir: 'to' }], store: next })
+      next = addNode({ type: 'artifact', title: `Field Note: ${data.momentTitle || 'Reflection'}`, content: data.crystallized, context: 'field-note', tags, newEdges: [{ nodeId: momentId, type: 'EMERGED_FROM', dir: 'to' }], store: next, stage: 'intake' })
     }
   }
 
   if (journeyId === 'note') {
-    next = addNode({ type: data.nodeType || 'artifact', title: data.name || 'Note', content: data.content || '', context: data.context || '', tags, newEdges: data.edges || [], store: next })
+    const noteType = data.nodeType || 'artifact'
+    const noteStage = (noteType === 'artifact' || noteType === 'idea') ? 'intake' : null
+    next = addNode({ type: noteType, title: data.name || 'Note', content: data.content || '', context: data.context || '', tags, newEdges: data.edges || [], store: next, stage: noteStage })
   }
 
   if (journeyId === 'article') {
@@ -454,7 +456,7 @@ function buildAndSave(journeyId, data, store) {
       }
     }
     const content = [data.keyIdeas, data.source ? `Source: ${data.source}` : null].filter(Boolean).join('\n\n')
-    next = addNode({ type: 'artifact', title: data.name || 'Article', content, context: data.context || 'reference', tags, newEdges: extraEdges, store: next })
+    next = addNode({ type: 'artifact', title: data.name || 'Article', content, context: data.context || 'reference', tags, newEdges: extraEdges, store: next, stage: 'intake' })
   }
 
   return next

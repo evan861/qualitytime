@@ -7,9 +7,11 @@ import Capture        from './components/Capture'
 import QueryPanel     from './components/QueryPanel'
 import ProtocolRunner from './components/ProtocolRunner'
 import ClaudeAdvisor  from './components/ClaudeAdvisor'
+import ConveyorBelt   from './components/ConveyorBelt'
 
 const NAV = [
   { id: 'dashboard', icon: '◈', label: 'Dashboard'  },
+  { id: 'belt',      icon: '⟳', label: 'Belt'       },
   { id: 'terrain',   icon: '⬡', label: 'Terrain'    },
   { id: 'capture',   icon: '◎', label: 'Capture'    },
   { id: 'query',     icon: '◐', label: 'Query'      },
@@ -99,6 +101,9 @@ export default function App() {
             initialNodeId={queryNodeId}
             key={queryNodeId}
           />
+        )}
+        {view === 'belt' && (
+          <ConveyorBelt store={store} onUpdate={updateStore} onNav={navTo} />
         )}
         {view === 'protocols' && (
           <ProtocolRunner store={store} onProtocolComplete={updateStore} />
